@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">mari</string>
+    <string name="app_description">tu asistente de salud</string>
+    <string name="iniciar_sesion">Iniciar sesión</string>
+    <string name="crear_cuenta">Crear cuenta</string>
+    <string name="email">Email</string>
+    <string name="password">Contraseña</string>
+    <string name="tienes_cuenta">¿Tienes cuenta?</string>
+    <string name="inicia_sesion">Inicia sesión.</string>
+</resources>
