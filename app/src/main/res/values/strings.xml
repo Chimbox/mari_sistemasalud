@@ -7,4 +7,17 @@
     <string name="password">Contraseña</string>
     <string name="tienes_cuenta">¿Tienes cuenta?</string>
     <string name="inicia_sesion">Inicia sesión.</string>
+    <string name="welcome">¡Bienvenido!</string>
+    <string name="title_activity_menu">MainActivity</string>
+    <string name="profile">Profile</string>
+    <string name="metas">Metas</string>
+    <string name="como_te_sientes">¿Como te sientes?</string>
+    <string name="diccionario">Diccionario</string>
+    <string name="emergencia">Emergencia</string>
+    <string name="como_te_sientes_hoy">¿Cómo te sientes hoy?</string>
+    <string name="fecha_jueves_25">Jueves 25 de marzo</string>
+    <string name="calendario">Calendario</string>
+    <string name="consejo_diario">Consejo diario</string>
+    <string name="consejo_diario_como_te_sientes">Manten tu organismo hidratado: se recomienda beber diariamente dos litros de agua.
+        Beber agua te ayuda a eliminar toxinas, ayuda en la digestión y evita el estreñimiento.</string>
 </resources>

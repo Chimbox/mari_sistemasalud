@@ -9,4 +9,7 @@
     <color name="white">#FFFFFFFF</color>
     <color name="purple_mari">#8787AE</color>
     <color name="light_purple_mari">#E2E2F1</color>
+    <!--- texto color -->
+    <color name="text_color_gray">#a9a9c4</color>
+    <color name="text_color_title">#8b8bb1</color>
 </resources>
