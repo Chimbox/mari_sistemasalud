@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/fragment_como_sientes">
+
+    <fragment
+        android:id="@+id/navigation_profile"
+        android:name="mx.edu.itson.mari_salud.ui.profile.HomeFragment"
+        android:label="@string/profile"
+        tools:layout="@layout/fragment_profile" />
+
+    <fragment
+        android:id="@+id/navigation_metas"
+        android:name="mx.edu.itson.mari_salud.ui.metas.DashboardFragment"
+        android:label="@string/metas"
+        tools:layout="@layout/fragment_metas" />
+
+    <fragment
+        android:id="@+id/navigation_como_sientes"
+        android:name="mx.edu.itson.mari_salud.ui.como_sientes.NotificationsFragment"
+        android:label="@string/como_te_sientes"
+        tools:layout="@layout/fragment_como_sientes" />
+    <fragment
+        android:id="@+id/navigation_diccionario"
+        android:name="mx.edu.itson.mari_salud.ui.diccionario.DiccionarioFragment"
+        android:label="@string/diccionario"
+        tools:layout="@layout/diccionario_fragment"/>
+    <fragment
+        android:id="@+id/navigation_emergencia"
+        android:name="mx.edu.itson.mari_salud.ui.emergencia.EmergenciaFragment"
+        android:label="@string/emergencia"
+        tools:layout="@layout/emergencia_fragment"/>
+</navigation>
