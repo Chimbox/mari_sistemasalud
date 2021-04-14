@@ -26,7 +26,7 @@
         android:id="@+id/navigation_diccionario"
         android:name="mx.edu.itson.mari_salud.ui.diccionario.DiccionarioFragment"
         android:label="@string/diccionario"
-        tools:layout="@layout/diccionario_fragment"/>
+        tools:layout="@layout/fragment_diccionario"/>
     <fragment
         android:id="@+id/navigation_emergencia"
         android:name="mx.edu.itson.mari_salud.ui.emergencia.EmergenciaFragment"

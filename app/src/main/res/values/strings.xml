@@ -15,12 +15,29 @@
     <string name="profile">Profile</string>
     <string name="metas">Metas</string>
     <string name="como_te_sientes">¿Como te sientes?</string>
+    <string name="text">Text</string>
+    <string name="buscar">Buscar...</string>
+    <string name="herida_abierta">Herida abierta</string>
+    <string name="heimlich">Maniobra Heimlich</string>
+    <string name="rcp">Reanimación cardiopulmonar (RCP)</string>
+    <string name="medicina">Medicina</string>
+    <string name="enfermedad">Enfermedad</string>
+    <string name="guardados">Guardados</string>
+    <string name="historial">Historial</string>
     <string name="diccionario">Diccionario</string>
     <string name="emergencia">Emergencia</string>
     <string name="como_te_sientes_hoy">¿Cómo te sientes hoy?</string>
     <string name="fecha_jueves_25">Jueves 25 de marzo</string>
     <string name="calendario">Calendario</string>
     <string name="consejo_diario">Consejo diario</string>
+    <string name="mi_perfil">Mi perfil</string>
+    <string name="ajustes_estilo_vida">Ajustes de estilo de vida</string>
+    <string name="mis_metas">Mis metas</string>
+    <string name="aniadir_metas">Añadir</string>
+    <string name="cerrar_sesion_profile">Cerrar sesión</string>
+    <string name="escribeUnaNota_metas">Escribe una nota</string>
     <string name="consejo_diario_como_te_sientes">Manten tu organismo hidratado: se recomienda beber diariamente dos litros de agua.
         Beber agua te ayuda a eliminar toxinas, ayuda en la digestión y evita el estreñimiento.</string>
+    <string name="necesito_ayuda">Necesito ayuda</string>
+    <string name="botiquin_emergencia">Botiquín de emergencia</string>
 </resources>

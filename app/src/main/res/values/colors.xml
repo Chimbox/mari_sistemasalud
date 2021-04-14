@@ -7,9 +7,16 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="purple_mari_dark">#63638A</color>
     <color name="purple_mari">#8787AE</color>
     <color name="light_purple_mari">#E2E2F1</color>
-    <!--- texto color -->
+    <color name="transparent">#00000000</color>
+    <color name="button_selected">#4B4C73</color>
+    <color name="profile_background">#8787ae</color>
+    <color name="color_btn_profile">#e2e2f1</color>
+    <color name="text_profile">#4b4c73</color>
+    <color name="notas_text_dark">#5d5e82</color>
+    <color name="checkbox_metas">#9595b8</color>
     <color name="text_color_gray">#a9a9c4</color>
     <color name="text_color_title">#8b8bb1</color>
 </resources>

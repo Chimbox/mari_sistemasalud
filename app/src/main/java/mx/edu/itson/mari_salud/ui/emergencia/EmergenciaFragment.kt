@@ -6,9 +6,12 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import kotlinx.android.synthetic.main.emergencia_fragment.view.*
 import mx.edu.itson.mari_salud.R
 
 class EmergenciaFragment : Fragment() {
+
+    var lstEmergencias=ArrayList<Emergencia>()
 
     companion object {
         fun newInstance() = EmergenciaFragment()
@@ -20,7 +23,17 @@ class EmergenciaFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        return inflater.inflate(R.layout.emergencia_fragment, container, false)
+        var root=inflater.inflate(R.layout.emergencia_fragment, container, false)
+
+        lstEmergencias.add(Emergencia(resources.getString(R.string.herida_abierta)))
+        lstEmergencias.add(Emergencia(resources.getString(R.string.heimlich)))
+        lstEmergencias.add(Emergencia(resources.getString(R.string.rcp)))
+
+        var adapter=EmergenciaListViewAdapter(lstEmergencias, context)
+
+        root.lvEmergencias.adapter=adapter
+
+        return root
     }
 
     override fun onActivityCreated(savedInstanceState: Bundle?) {
