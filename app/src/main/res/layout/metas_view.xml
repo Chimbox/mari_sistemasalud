@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="horizontal"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        >
+        <Button
+            android:id="@+id/btnMetas"
+            android:layout_width="250dp"
+            android:layout_height="60dp"
+            android:background="@drawable/rounded_purple_button"
+            android:layout_marginStart="30dp"
+            android:text="Lorem Ipsum"
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            />
+        <CheckBox
+            android:id="@+id/checkboxMetas"
+            android:layout_width="wrap_content"
+            android:scaleX="3"
+            android:scaleY="3"
+            android:layout_marginLeft="39dp"
+            android:layout_height="wrap_content"
+            android:onClick="onCheckboxClicked"
+            android:buttonTint="@color/checkbox_metas"
+            />
+    </LinearLayout>
+
+
+</LinearLayout>

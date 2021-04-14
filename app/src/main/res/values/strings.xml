@@ -6,7 +6,10 @@
     <string name="email">Email</string>
     <string name="password">Contraseña</string>
     <string name="tienes_cuenta">¿Tienes cuenta?</string>
+    <string name="no_tienes_cuenta">¿No tienes cuenta?</string>
+    <string name="registrate">Regístrate.</string>
     <string name="inicia_sesion">Inicia sesión.</string>
+    <string name="entrar">Entrar</string>
     <string name="welcome">¡Bienvenido!</string>
     <string name="title_activity_menu">MainActivity</string>
     <string name="profile">Profile</string>
@@ -20,4 +23,12 @@
     <string name="consejo_diario">Consejo diario</string>
     <string name="consejo_diario_como_te_sientes">Manten tu organismo hidratado: se recomienda beber diariamente dos litros de agua.
         Beber agua te ayuda a eliminar toxinas, ayuda en la digestión y evita el estreñimiento.</string>
+
+
+    <string name="mi_perfil">Mi perfil</string>
+    <string name="ajustes_estilo_vida">Ajustes de estilo de vida</string>
+    <string name="mis_metas">Mis metas</string>
+    <string name="aniadir_metas">Añadir</string>
+    <string name="cerrar_sesion_profile">Cerrar sesión</string>
+    <string name="escribeUnaNota_metas">Escribe una nota</string>
 </resources>

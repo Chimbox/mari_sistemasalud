@@ -13,6 +13,7 @@
         android:layout_height="wrap_content"
         android:orientation="vertical"
         android:layout_gravity="center">
+
         <TextView
             android:layout_width="200dp"
             android:layout_height="wrap_content"
@@ -21,7 +22,7 @@
             android:text="@string/como_te_sientes_hoy"
             android:textColor="@color/white"
             android:textSize="29sp"
-            android:layout_marginLeft="20dp"
+            android:textAlignment="center"
             android:textStyle="bold" />
 
         <TextView
@@ -48,48 +49,47 @@
             android:layout_height="60dp"
             android:background="@drawable/little_card_view_background">
 
-            <ImageView
+            <ImageButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:src="@drawable/add" />
+                android:background="@drawable/add"/>
+
         </LinearLayout>
 
-        <LinearLayout
+        <Button
             android:layout_width="60dp"
             android:layout_height="60dp"
             android:background="@drawable/little_card_view_background"
-            android:paddingLeft="3dp"
-            android:layout_marginLeft="60dp">
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textSize="11dp"
-                android:layout_gravity="center_vertical"
-                android:textColor="@color/text_color_gray"
-                android:text="@string/calendario"/>
-        </LinearLayout>
+            android:textSize="11sp"
+            android:gravity="center"
+            android:textColor="@color/text_color_gray"
+            android:layout_marginLeft="60dp"
+            android:textAllCaps="false"
+            android:text="@string/calendario">
+        </Button>
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="300dp"
+        android:layout_height="fill_parent"
         android:layout_alignParentBottom="true"
         android:background="@drawable/rounded_white_card"
-        android:orientation="vertical"
-        android:paddingBottom="90dp">
+        android:orientation="vertical">
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
+            android:layout_marginTop="10dp"
             android:text="@string/consejo_diario"
             android:textColor="@color/text_color_title"
             android:textStyle="bold"
             android:textSize="26sp"/>
         <TextView
+            android:id="@+id/text_notifications"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:gravity="center"
             android:layout_marginLeft="20dp"
             android:layout_marginRight="20dp"
@@ -97,5 +97,4 @@
             android:textColor="@color/text_color_gray"
             android:textSize="25sp"/>
     </LinearLayout>
-
 </LinearLayout>

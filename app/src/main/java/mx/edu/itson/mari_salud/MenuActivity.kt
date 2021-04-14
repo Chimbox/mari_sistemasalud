@@ -24,7 +24,6 @@ class MenuActivity : AppCompatActivity() {
                 R.id.navigation_diccionario,R.id.navigation_emergencia
                 )
         )
-        setupActionBarWithNavController(navController, appBarConfiguration)
         navView.setupWithNavController(navController)
     }
 }

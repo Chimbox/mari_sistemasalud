@@ -12,4 +12,9 @@
     <!--- texto color -->
     <color name="text_color_gray">#a9a9c4</color>
     <color name="text_color_title">#8b8bb1</color>
+    <color name="profile_background">#8787ae</color>
+    <color name="color_btn_profile">#e2e2f1</color>
+    <color name="text_profile">#4b4c73</color>
+    <color name="notas_text_dark">#5d5e82</color>
+    <color name="checkbox_metas">#9595b8</color>
 </resources>
