@@ -25,9 +25,11 @@ class DashboardFragment : Fragment() {
             ViewModelProvider(this).get(DashboardViewModel::class.java)
         val root = inflater.inflate(R.layout.fragment_metas, container, false)
 
-        lstMetas.add(Meta("Lorem lorem lorem", false))
-        lstMetas.add(Meta("Lorem lorem lorem", true))
-        lstMetas.add(Meta("Lorem lorem lorem", false))
+        lstMetas.add(Meta("Meta 1", false))
+        lstMetas.add(Meta("Meta 2", true))
+        lstMetas.add(Meta("Meta 3", false))
+        lstMetas.add(Meta("Meta 4", false))
+        lstMetas.add(Meta("Meta 5", false))
 
         var adapter=MetaListViewAdapter(lstMetas, context)
         root.lvMetas.adapter=adapter

@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/gradient_background"
+    android:background="@color/background"
     android:orientation="vertical"
     tools:context=".ui.como_sientes.NotificationsFragment">
 
@@ -47,13 +47,14 @@
         <LinearLayout
             android:layout_width="100dp"
             android:layout_height="100dp"
+            android:gravity="center"
             android:background="@drawable/little_card_view_background">
 
             <ImageButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
                 android:layout_gravity="center"
-                android:background="@drawable/add"/>
+                android:background="@drawable/ic_add"/>
 
         </LinearLayout>
 
@@ -63,7 +64,7 @@
             android:background="@drawable/little_card_view_background"
             android:textSize="18sp"
             android:gravity="center"
-            android:textColor="@color/text_color_gray"
+            android:textColor="@color/dark_foreground"
             android:layout_marginLeft="60dp"
             android:textAllCaps="false"
             android:text="@string/calendario">
@@ -86,7 +87,7 @@
                 android:gravity="center"
                 android:layout_marginTop="10dp"
                 android:text="@string/consejo_diario"
-                android:textColor="@color/text_color_title"
+                android:textColor="@color/dark_foreground"
                 android:textStyle="bold"
                 android:textSize="26sp"/>
             <TextView
@@ -97,7 +98,7 @@
                 android:layout_marginLeft="20dp"
                 android:layout_marginRight="20dp"
                 android:text="@string/consejo_diario_como_te_sientes"
-                android:textColor="@color/text_color_gray"
+                android:textColor="@color/dark_foreground"
                 android:textSize="25sp"/>
         </LinearLayout>
     </ScrollView>
