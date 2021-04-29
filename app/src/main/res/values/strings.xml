@@ -40,4 +40,14 @@
         Beber agua te ayuda a eliminar toxinas, ayuda en la digestión y evita el estreñimiento.</string>
     <string name="necesito_ayuda">Necesito ayuda</string>
     <string name="botiquin_emergencia">Botiquín de emergencia</string>
+    <string name="numeros_emergencia">Números de emergencia</string>
+    <string name="hospitales_cercanos">Hospitales cercanos</string>
+    <string name="farmacias_cercanas">Farmacias cercanas</string>
+    <string name="necesito_atencion">Necesito atención</string>
+    <string name="estado_animo">Estado de ánimo</string>
+    <string name="sintomas">Síntomas</string>
+    <string name="metas">Metas</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
 </resources>
