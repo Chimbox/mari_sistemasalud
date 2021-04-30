@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/profile_background"
+    android:background="@color/white"
     android:orientation="vertical"
     tools:context=".ui.profile.HomeFragment">
 
@@ -14,7 +14,7 @@
         android:layout_height="wrap_content"
         android:gravity="center"
         android:text="@string/mi_perfil"
-        android:textColor="@color/white"
+        android:textColor="@color/dark_foreground"
         android:textSize="35sp"
         android:textStyle="bold"
         android:layout_marginTop="30dp"

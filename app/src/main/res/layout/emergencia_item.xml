@@ -12,7 +12,7 @@
         android:background="@drawable/little_card_view_background"
         android:textSize="20sp"
         android:paddingHorizontal="20dp"
-        android:textColor="@color/text_color_gray"
+        android:textColor="@color/dark_foreground"
         android:textAllCaps="false"
         android:gravity="center"
         android:text="@string/herida_abierta">

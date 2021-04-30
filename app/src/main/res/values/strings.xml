@@ -34,8 +34,14 @@
     <string name="ajustes_estilo_vida">Ajustes de estilo de vida</string>
     <string name="mis_metas">Mis metas</string>
     <string name="aniadir_metas">Añadir</string>
+    <string name="editor_de_metas">Editor de metas</string>
+    <string name="escribir_meta">Escribir meta</string>
+    <string name="editar_metas">Editar metas</string>
     <string name="cerrar_sesion_profile">Cerrar sesión</string>
     <string name="escribeUnaNota_metas">Escribe una nota</string>
+    <string name="editar">Editar</string>
+    <string name="duplicar">Duplicar</string>
+    <string name="borrar">Borrar</string>
     <string name="consejo_diario_como_te_sientes">Manten tu organismo hidratado: se recomienda beber diariamente dos litros de agua.
         Beber agua te ayuda a eliminar toxinas, ayuda en la digestión y evita el estreñimiento.</string>
     <string name="necesito_ayuda">Necesito ayuda</string>
@@ -46,8 +52,8 @@
     <string name="necesito_atencion">Necesito atención</string>
     <string name="estado_animo">Estado de ánimo</string>
     <string name="sintomas">Síntomas</string>
-    <string name="metas">Metas</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="guardar">Guardar</string>
 
 </resources>

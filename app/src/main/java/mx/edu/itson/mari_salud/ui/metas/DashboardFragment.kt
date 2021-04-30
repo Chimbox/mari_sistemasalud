@@ -1,5 +1,6 @@
 package mx.edu.itson.mari_salud.ui.metas
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -33,6 +34,11 @@ class DashboardFragment : Fragment() {
 
         var adapter=MetaListViewAdapter(lstMetas, context)
         root.lvMetas.adapter=adapter
+
+        root.lytAniadirMeta.setOnClickListener {
+            var intent = Intent(context,ActivityEditorMetas::class.java)
+            startActivity(intent)
+        }
 
         return root
     }
