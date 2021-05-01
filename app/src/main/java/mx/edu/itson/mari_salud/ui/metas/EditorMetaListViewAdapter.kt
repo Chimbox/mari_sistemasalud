@@ -20,7 +20,6 @@ class EditorMetaListViewAdapter : BaseAdapter {
         this.context = context
     }
 
-
     override fun getCount(): Int {
         return lstMetas.size
     }
@@ -77,7 +76,6 @@ class EditorMetaListViewAdapter : BaseAdapter {
                 vista.lytOpcionesMeta.visibility=VISIBLE
             }
         }
-
         return vista
     }
 }

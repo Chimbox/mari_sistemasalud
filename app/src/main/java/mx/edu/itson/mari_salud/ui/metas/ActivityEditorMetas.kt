@@ -21,7 +21,9 @@ class ActivityEditorMetas : AppCompatActivity() {
 
         var adapter = EditorMetaListViewAdapter(lstMetas, this)
         lvMetas.adapter = adapter
-
+        btnRegresar.setOnClickListener {
+            finish()
+        }
         btnAgregarMeta.setOnClickListener {
             lstMetas.add(Meta(etMeta.text.toString(),false))
             etMeta.text.clear()

@@ -30,6 +30,10 @@ class HomeFragment : Fragment() {
             activity?.finish()
         }
 
+        root.btnAjusteEstiloVida.setOnClickListener {
+            var intent= Intent(context, AjustesEstiloVidaActivity::class.java)
+            startActivity(intent)
+        }
         return root
     }
 }

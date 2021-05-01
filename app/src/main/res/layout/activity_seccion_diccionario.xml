@@ -29,7 +29,6 @@
         android:layout_height="match_parent"
         android:layout_marginTop="10dp"
         android:paddingTop="10dp"
-        android:layout_paddingHorizontal="10dp"
         android:layout_weight="1"
         android:background="@drawable/rounded_white_card"
         android:orientation="vertical">

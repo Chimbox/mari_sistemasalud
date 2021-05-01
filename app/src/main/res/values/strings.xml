@@ -52,8 +52,34 @@
     <string name="necesito_atencion">Necesito atención</string>
     <string name="estado_animo">Estado de ánimo</string>
     <string name="sintomas">Síntomas</string>
+    <string name="tiempo_sueño">Tiempo normal de sueño</string>
+    <string name="la_mayoria_personas">La mayoría de las personas...</string>
+    <string name="consumo_de_agua">Consumo de agua</string>
+    <string name="Tiempo_de_sueño">Tiempo de sueño</string>
+    <string name="hoy_me_siento">Hoy me siento...</string>
+    <string name="fecha_hoySiento">25 de marzo</string>
+    <!-- estados de animo-->
+    <string name="feliz">Feliz</string>
+    <string name="calmado">Calmado</string>
+    <string name="activo">Activo</string>
+    <string name="triste">Triste</string>
+    <string name="irritado">Irritado</string>
+    <string name="ansioso">Ansias</string>
+    <!--Sintomas-->
+    <string name="dolor_cabeza">Dolor <br /> de <br />cabeza</string>
+    <string name="Insomnio">Insonmio</string>
+    <string name="diarrea">Diarrea</string>
+    <string name="gripe">Gripe</string>
+    <string name="tos">Tos</string>
+    <string name="dolor_garganta">Dolor <br /> de <br />gar-ganta</string>
+    <string name="persnalizado">Personalizado</string>
+    <string name="notas">Notas</string>
+    <string name="mis_estados">Mis estados</string>
+    <string name="escribir_estado">Escribir estado</string>
+    <string name="editor_estados">Editor estados</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="guardar">Guardar</string>
+    <string name="ingresa_nota_sintoma">Ingresa un síntoma o una nota</string>
 
 </resources>

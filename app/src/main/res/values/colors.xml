@@ -11,6 +11,7 @@
     <color name="light_background">#C5DADF</color>
     <color name="button_background">#437E8B</color>
     <color name="dark_foreground">#568B96</color>
+    <color name="dark_foreground_comoMeSiento">#52646f</color>
     <color name="light_foreground">#437E8B</color>
     <color name="red_foreground">#B83333</color>
     <color name="red_background">#B83333</color>

@@ -51,6 +51,7 @@
             android:background="@drawable/little_card_view_background">
 
             <ImageButton
+                android:id="@+id/btnAgregarSentir"
                 android:visibility="visible"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
