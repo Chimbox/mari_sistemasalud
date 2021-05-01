@@ -1,13 +1,83 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background"
     tools:context=".ui.emergencia.EmergenciaFragment">
 
-    <TextView
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="Hello" />
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
 
-</FrameLayout>
+        <TextView
+            android:layout_width="200dp"
+            android:layout_marginLeft="20dp"
+            android:layout_height="wrap_content"
+            android:paddingTop="20dp"
+            android:text="@string/emergencia"
+            android:textColor="@color/white"
+            android:textSize="35sp"
+            android:textAlignment="textStart"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="30dp">
+
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            android:background="@drawable/little_card_view_background"
+            android:textSize="20sp"
+            android:textColor="@color/dark_foreground"
+            android:textAllCaps="false"
+            android:gravity="center"
+            android:layout_marginRight="15dp"
+            android:text="@string/botiquin_emergencia">
+        </Button>
+
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            android:background="@drawable/little_card_view_background"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:layout_marginLeft="15dp"
+            android:textColor="@color/dark_foreground"
+            android:textAllCaps="false"
+            android:text="@string/necesito_ayuda">
+        </Button>
+    </LinearLayout>
+
+    <!--    <ListView-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="match_parent"-->
+    <!--        android:id="@+id/list_emergencia"-->
+    <!--        android:layout_marginTop="30dp">-->
+    <!--    </ListView>-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_marginTop="30dp">
+
+        <ListView
+            android:id="@+id/lvEmergencias"
+            android:layout_marginHorizontal="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:dividerHeight="10dp"
+            android:divider="@color/transparent"/>
+
+    </LinearLayout>
+
+</LinearLayout>

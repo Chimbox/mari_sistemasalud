@@ -6,9 +6,12 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ListView
 import mx.edu.itson.mari_salud.R
 
 class DiccionarioFragment : Fragment() {
+
+    var lstDiccionarios=ArrayList<Diccionario>()
 
     companion object {
         fun newInstance() = DiccionarioFragment()
@@ -20,7 +23,24 @@ class DiccionarioFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        return inflater.inflate(R.layout.diccionario_fragment, container, false)
+        val root=inflater.inflate(R.layout.fragment_diccionario, container, false)
+
+        lstDiccionarios.add(Diccionario("Dolor de cabeza",ArrayList<SeccionDiccionario>()))
+        lstDiccionarios.add(Diccionario("Text",ArrayList<SeccionDiccionario>()))
+        lstDiccionarios.add(Diccionario("Text",ArrayList<SeccionDiccionario>()))
+        lstDiccionarios.add(Diccionario("Text",ArrayList<SeccionDiccionario>()))
+        lstDiccionarios.add(Diccionario("Text",ArrayList<SeccionDiccionario>()))
+        lstDiccionarios.add(Diccionario("Text",ArrayList<SeccionDiccionario>()))
+        lstDiccionarios.add(Diccionario("Text",ArrayList<SeccionDiccionario>()))
+        lstDiccionarios.add(Diccionario("Text",ArrayList<SeccionDiccionario>()))
+        lstDiccionarios.add(Diccionario("Text",ArrayList<SeccionDiccionario>()))
+        lstDiccionarios.add(Diccionario("Text",ArrayList<SeccionDiccionario>()))
+
+        var adapter=DiccionarioListViewAdapter(lstDiccionarios,context)
+        var lvDiccionario=root.findViewById(R.id.lvDiccionario) as ListView
+
+        lvDiccionario.adapter=adapter
+        return root
     }
 
     override fun onActivityCreated(savedInstanceState: Bundle?) {

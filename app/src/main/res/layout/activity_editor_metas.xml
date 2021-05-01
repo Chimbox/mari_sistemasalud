@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical"
+    tools:context=".ui.metas.ActivityEditorMetas">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageButton
+            android:id="@+id/btnRegresar"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/ic_left"
+            android:scaleType="fitXY"
+            android:background="@color/transparent"
+            android:layout_width="65dp"
+            android:layout_height="50dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:layout_gravity="center"
+            android:text="@string/editor_de_metas"
+            android:textSize="35sp"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@drawable/rounded_white_card"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_margin="20dp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/etMeta"
+                android:layout_width="200dp"
+                android:layout_height="75dp"
+                android:layout_marginHorizontal="10dp"
+                android:textAllCaps="false"
+                android:textColor="@color/light_foreground"
+                android:textAlignment="center"
+                android:background="@drawable/rounded_light_background"
+                android:hint="@string/escribir_meta"
+                android:textColorHint="@color/light_foreground"
+                android:textSize="20sp" />
+
+            <ImageButton
+                android:id="@+id/btnAgregarMeta"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_marginHorizontal="10dp"
+                android:src="@drawable/ic_add"
+                android:background="@drawable/rounded_button_red"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/editar_metas"
+            android:textAlignment="center"
+            android:textSize="22sp"
+            android:textColor="@color/dark_foreground"
+            android:textStyle="bold"/>
+        <ListView
+            android:id="@+id/lvMetas"
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:layout_marginHorizontal="5dp"
+            android:dividerHeight="10dp"
+            android:divider="@color/transparent"/>
+    </LinearLayout>
+</LinearLayout>
