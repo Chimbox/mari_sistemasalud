@@ -29,14 +29,16 @@
         android:layout_height="match_parent"
         android:layout_marginTop="10dp"
         android:paddingTop="10dp"
+        android:paddingHorizontal="10dp"
         android:layout_weight="1"
         android:background="@drawable/rounded_white_card"
         android:orientation="vertical">
 
         <TextView
+            android:id="@+id/tvTituloDiccionario"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/editar_metas"
+            android:text="@string/titulo_diccionario"
             android:layout_marginHorizontal="20dp"
             android:textSize="30sp"
             android:textColor="@color/dark_foreground"
@@ -44,8 +46,9 @@
 
         <ListView
             android:id="@+id/lvSecciones"
+            android:layout_marginTop="20dp"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
+            android:layout_height="match_parent"/>
 
     </LinearLayout>
 
