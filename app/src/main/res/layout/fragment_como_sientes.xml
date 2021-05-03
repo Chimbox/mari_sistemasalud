@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@color/background"
     android:orientation="vertical"
-    tools:context=".ui.como_sientes.NotificationsFragment">
+    tools:context=".ui.como_sientes.ComoSientesFragment">
 
     <LinearLayout
         android:layout_width="wrap_content"
@@ -61,6 +61,7 @@
         </LinearLayout>
 
         <Button
+            android:id="@+id/btnCalendario"
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:background="@drawable/little_card_view_background"

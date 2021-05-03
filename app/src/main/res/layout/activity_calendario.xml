@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical"
+    tools:context=".ui.como_sientes.CalendarioActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center|center_vertical">
+
+        <CalendarView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+        </CalendarView>
+
+    </LinearLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginTop="20dp">
+
+            <Button
+                android:id="@+id/btnEstadoAnimo"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:background="@drawable/little_card_view_background"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/dark_foreground"
+                android:textAllCaps="false"
+                android:gravity="center"
+                android:layout_marginTop="10dp"
+                android:text="@string/estado_animo">
+            </Button>
+
+            <Button
+                android:id="@+id/btnSintomas"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:background="@drawable/little_card_view_background"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/dark_foreground"
+                android:textAllCaps="false"
+                android:gravity="center"
+                android:layout_marginTop="10dp"
+                android:text="@string/sintomas">
+            </Button>
+
+            <Button
+                android:id="@+id/btnMetas"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:background="@drawable/little_card_view_background"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/dark_foreground"
+                android:textAllCaps="false"
+                android:gravity="center"
+                android:layout_marginTop="10dp"
+                android:text="@string/metas">
+            </Button>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

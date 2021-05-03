@@ -103,6 +103,7 @@ class DiccionarioFragment : Fragment() {
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
         viewModel = ViewModelProvider(this).get(DiccionarioViewModel::class.java)
+        btnMedicinas.isChecked=true
         // TODO: Use the ViewModel
     }
 

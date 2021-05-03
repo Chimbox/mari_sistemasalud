@@ -10,6 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Mari_salud">
         <activity android:name=".ui.como_sientes.MisEstadosActivity"></activity>
+        <activity android:name=".ui.como_sientes.CalendarioActivity"></activity>
         <activity android:name=".ui.como_sientes.MeSientoActivity" />
         <activity android:name=".ui.profile.AjustesEstiloVidaActivity" />
         <activity android:name=".ui.diccionario.SeccionDiccionarioActivity" />

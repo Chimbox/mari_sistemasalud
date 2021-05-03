@@ -7,19 +7,19 @@
 
     <fragment
         android:id="@+id/navigation_profile"
-        android:name="mx.edu.itson.mari_salud.ui.profile.HomeFragment"
+        android:name="mx.edu.itson.mari_salud.ui.profile.ProfileFragment"
         android:label="@string/profile"
         tools:layout="@layout/fragment_profile" />
 
     <fragment
         android:id="@+id/navigation_metas"
-        android:name="mx.edu.itson.mari_salud.ui.metas.DashboardFragment"
+        android:name="mx.edu.itson.mari_salud.ui.metas.MetasFragment"
         android:label="@string/metas"
         tools:layout="@layout/fragment_metas" />
 
     <fragment
         android:id="@+id/navigation_como_sientes"
-        android:name="mx.edu.itson.mari_salud.ui.como_sientes.NotificationsFragment"
+        android:name="mx.edu.itson.mari_salud.ui.como_sientes.ComoSientesFragment"
         android:label="@string/como_te_sientes"
         tools:layout="@layout/fragment_como_sientes" />
     <fragment
