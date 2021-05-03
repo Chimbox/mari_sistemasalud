@@ -3,6 +3,7 @@ package mx.edu.itson.mari_salud.ui.metas
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import kotlinx.android.synthetic.main.activity_editor_metas.*
+import kotlinx.android.synthetic.main.activity_editor_metas.btnRegresar
 import kotlinx.android.synthetic.main.fragment_metas.lvMetas
 import mx.edu.itson.mari_salud.R
 
@@ -28,6 +29,10 @@ class ActivityEditorMetas : AppCompatActivity() {
             lstMetas.add(Meta(etMeta.text.toString(),false))
             etMeta.text.clear()
             adapter.notifyDataSetChanged()
+        }
+
+        btnRegresar.setOnClickListener {
+            onBackPressed()
         }
     }
 }

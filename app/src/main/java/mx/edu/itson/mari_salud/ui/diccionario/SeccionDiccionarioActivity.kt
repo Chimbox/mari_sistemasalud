@@ -25,5 +25,9 @@ class SeccionDiccionarioActivity : AppCompatActivity() {
 
             lvSecciones.adapter=adapter
         }
+
+        btnRegresar.setOnClickListener {
+            onBackPressed()
+        }
     }
 }

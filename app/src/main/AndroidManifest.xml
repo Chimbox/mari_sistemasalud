@@ -14,7 +14,6 @@
         <activity android:name=".ui.profile.AjustesEstiloVidaActivity" />
         <activity android:name=".ui.diccionario.SeccionDiccionarioActivity" />
         <activity android:name=".ui.metas.ActivityEditorMetas" />
-        <activity android:name=".ui.emergencia.Necesito_Ayuda" />
         <activity android:name=".RegisterActivity" />
         <activity
             android:name=".MenuActivity"
