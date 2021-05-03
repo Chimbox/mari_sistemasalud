@@ -2,24 +2,25 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item
         android:id="@+id/navigation_profile"
-        android:icon="@drawable/rounded_background_button"
+        android:icon="@mipmap/perfil_48x48_mdpi"
+        android:iconTint="@color/transparent"
         android:title="@string/profile" />
 
     <item
         android:id="@+id/navigation_metas"
-        android:icon="@drawable/rounded_background_button"
+        android:icon="@mipmap/metas_48x48_mdpi"
         android:title="@string/metas" />
 
     <item
         android:id="@+id/navigation_como_sientes"
-        android:icon="@drawable/rounded_background_button"
+        android:icon="@mipmap/feliz_48x48_mdpi"
         android:title="@string/como_te_sientes" />
     <item
         android:id="@+id/navigation_diccionario"
-        android:icon="@drawable/rounded_background_button"
+        android:icon="@mipmap/historial_48x48_mdpi"
         android:title="@string/diccionario" />
     <item
         android:id="@+id/navigation_emergencia"
-        android:icon="@drawable/rounded_background_button"
+        android:icon="@mipmap/ayuda_48x48_mdpi"
         android:title="@string/emergencia" />
 </menu>
