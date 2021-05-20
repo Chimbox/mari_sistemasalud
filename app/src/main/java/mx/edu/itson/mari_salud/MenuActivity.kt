@@ -14,7 +14,7 @@ class MenuActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_menu)
         val navView: BottomNavigationView = findViewById(R.id.nav_view)
-
+        navView.itemIconTintList=null
         val navController = findNavController(R.id.nav_host_fragment)
         // Passing each menu ID as a set of Ids because each
         // menu should be considered as top level destinations.

@@ -29,5 +29,9 @@ class SeccionDiccionarioActivity : AppCompatActivity() {
         btnRegresar.setOnClickListener {
             onBackPressed()
         }
+
+        btnGuardar.setOnClickListener {
+            btnGuardar.setImageResource(R.mipmap.favorito2_48x48_mdpi)
+        }
     }
 }

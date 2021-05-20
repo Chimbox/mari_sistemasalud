@@ -5,4 +5,6 @@
     <dimen name="little_cardviewRadius">16dp</dimen>
     <dimen name="separation_cards">20dp</dimen>
     <dimen name="btn_diccionario_height">120dp</dimen>
+    <dimen name="rbtn_diccionario_height">60dp</dimen>
+    <dimen name="rbtn_diccionario_width">60dp</dimen>
 </resources>

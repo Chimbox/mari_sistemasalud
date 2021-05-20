@@ -28,10 +28,10 @@ class DiccionarioFragment : Fragment() {
     ): View? {
         val root=inflater.inflate(R.layout.fragment_diccionario, container, false)
 
-        var medicina=CategoriaDiccionario(0, "Medicina")
-        var enfermedad=CategoriaDiccionario(1,"Enfermedad")
-        var guardados=CategoriaDiccionario(2,"Guardados")
-        var historial=CategoriaDiccionario(3,"Historial")
+        var medicina=CategoriaDiccionario("Medicina")
+        var enfermedad=CategoriaDiccionario("Enfermedad")
+        var guardados=CategoriaDiccionario("Guardados")
+        var historial=CategoriaDiccionario("Historial")
 
         var seccionesParacetamol=ArrayList<SeccionDiccionario>()
         seccionesParacetamol.add(SeccionDiccionario("¿Qué cura?","Dolor de cabeza.\nDolor de espalda."))
@@ -76,7 +76,7 @@ class DiccionarioFragment : Fragment() {
                 var lstMostrar=ArrayList<Diccionario>()
 
                 lstDiccionarios.forEach {
-                    if(it.categoria.id==categoria.id){
+                    if(it.categoria.nombre.equals(categoria.nombre)){
                         lstMostrar.add(it)
                     }
                 }

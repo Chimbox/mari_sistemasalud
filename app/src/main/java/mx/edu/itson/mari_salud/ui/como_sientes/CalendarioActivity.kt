@@ -2,11 +2,7 @@ package mx.edu.itson.mari_salud.ui.como_sientes
 
 import android.content.Intent
 import android.os.Bundle
-import android.os.PersistableBundle
-import androidx.fragment.app.Fragment
-import android.view.LayoutInflater
 import android.view.View
-import android.view.ViewGroup
 import androidx.appcompat.app.AppCompatActivity
 import kotlinx.android.synthetic.main.activity_calendario.*
 import mx.edu.itson.mari_salud.R
@@ -31,7 +27,7 @@ class CalendarioActivity : AppCompatActivity() {
     }
 
     private fun abreMeSientoActivity(){
-        var intent= Intent(this,MeSientoActivity::class.java)
+        var intent= Intent(this, MeSientoActivity::class.java)
         startActivity(intent)
     }
 
@@ -39,5 +35,4 @@ class CalendarioActivity : AppCompatActivity() {
         var intent=Intent(this, ActivityEditorMetas::class.java)
         startActivity(intent)
     }
-
 }

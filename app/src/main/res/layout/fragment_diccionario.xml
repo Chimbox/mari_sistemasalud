@@ -50,9 +50,9 @@
 
             <RadioButton
                 android:id="@+id/btnMedicinas"
-                android:layout_width="80dp"
-                android:layout_height="80dp"
-                android:background="@drawable/diccionario_selectable"
+                android:layout_width="@dimen/rbtn_diccionario_height"
+                android:layout_height="@dimen/rbtn_diccionario_width"
+                android:background="@mipmap/medicamento_48x48_mdpi"
                 android:button="@color/transparent" />
 
             <TextView
@@ -68,10 +68,10 @@
 
             <RadioButton
                 android:id="@+id/btnEnfermedad"
-                android:layout_width="80dp"
-                android:layout_height="80dp"
+                android:layout_width="@dimen/rbtn_diccionario_height"
+                android:layout_height="@dimen/rbtn_diccionario_width"
                 android:layout_marginTop="20dp"
-                android:background="@drawable/diccionario_selectable"
+                android:background="@mipmap/enfermedad_48x48_mdpi"
                 android:button="@color/transparent" />
 
             <TextView
@@ -87,10 +87,10 @@
 
             <RadioButton
                 android:id="@+id/btnGuardados"
-                android:layout_width="80dp"
-                android:layout_height="80dp"
+                android:layout_width="@dimen/rbtn_diccionario_height"
+                android:layout_height="@dimen/rbtn_diccionario_width"
                 android:layout_marginTop="20dp"
-                android:background="@drawable/diccionario_selectable"
+                android:background="@mipmap/guardados_48x48_mdpi"
                 android:button="@color/transparent" />
 
             <TextView
@@ -106,10 +106,10 @@
 
             <RadioButton
                 android:id="@+id/btnHistorial"
-                android:layout_width="80dp"
-                android:layout_height="80dp"
+                android:layout_width="@dimen/rbtn_diccionario_height"
+                android:layout_height="@dimen/rbtn_diccionario_width"
                 android:layout_marginTop="20dp"
-                android:background="@drawable/diccionario_selectable"
+                android:background="@mipmap/historial_48x48_mdpi"
                 android:button="@color/transparent" />
 
             <TextView

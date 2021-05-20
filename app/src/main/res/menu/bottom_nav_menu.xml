@@ -14,13 +14,13 @@
     <item
         android:id="@+id/navigation_como_sientes"
         android:icon="@mipmap/feliz_48x48_mdpi"
-        android:title="@string/como_te_sientes" />
+        android:title="@string/inicio" />
     <item
         android:id="@+id/navigation_diccionario"
-        android:icon="@mipmap/historial_48x48_mdpi"
-        android:title="@string/diccionario" />
+        android:icon="@mipmap/busqueda_48x48_mdpi"
+        android:title="@string/buscar_diccionarios" />
     <item
         android:id="@+id/navigation_emergencia"
-        android:icon="@mipmap/ayuda_48x48_mdpi"
+        android:icon="@mipmap/emergencia_48x48_mdpi"
         android:title="@string/emergencia" />
 </menu>

@@ -12,9 +12,10 @@
     <string name="entrar">Entrar</string>
     <string name="welcome">¡Bienvenido!</string>
     <string name="title_activity_menu">MainActivity</string>
-    <string name="profile">Profile</string>
+    <string name="profile">Perfil</string>
     <string name="metas">Metas</string>
     <string name="como_te_sientes">¿Como te sientes?</string>
+    <string name="inicio">Inicio</string>
     <string name="text">Text</string>
     <string name="buscar">Buscar...</string>
     <string name="herida_abierta">Herida abierta</string>
@@ -25,6 +26,7 @@
     <string name="guardados">Guardados</string>
     <string name="historial">Historial</string>
     <string name="diccionario">Diccionario</string>
+    <string name="buscar_diccionarios">Buscar</string>
     <string name="emergencia">Emergencia</string>
     <string name="como_te_sientes_hoy">¿Cómo te sientes hoy?</string>
     <string name="fecha_jueves_25">Jueves 25 de marzo</string>
