@@ -43,6 +43,8 @@
                 android:textColor="@color/dark_foreground"
                 android:textAllCaps="false"
                 android:gravity="center"
+                android:drawableLeft="@mipmap/feliz_72x72_hdpi"
+                android:paddingLeft="15dp"
                 android:layout_marginTop="10dp"
                 android:text="@string/estado_animo">
             </Button>
@@ -54,6 +56,8 @@
                 android:background="@drawable/little_card_view_background"
                 android:textSize="20sp"
                 android:textStyle="bold"
+                android:drawableLeft="@mipmap/gripe_72x72_hdpi"
+                android:paddingLeft="15dp"
                 android:textColor="@color/dark_foreground"
                 android:textAllCaps="false"
                 android:gravity="center"
@@ -67,6 +71,8 @@
                 android:layout_height="100dp"
                 android:background="@drawable/little_card_view_background"
                 android:textSize="20sp"
+                android:drawableLeft="@mipmap/metas_72x72_hdpi"
+                android:paddingLeft="15dp"
                 android:textStyle="bold"
                 android:textColor="@color/dark_foreground"
                 android:textAllCaps="false"

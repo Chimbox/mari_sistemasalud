@@ -37,7 +37,7 @@
                 android:id="@+id/btnEditarMeta"
                 android:layout_width="50dp"
                 android:layout_height="50dp"
-                android:background="@drawable/editormeta_rounded_button_white" />
+                android:background="@mipmap/editar_36x36_ldpi" />
 
             <TextView
                 android:layout_width="match_parent"
@@ -57,7 +57,7 @@
                 android:id="@+id/btnDuplicar"
                 android:layout_width="50dp"
                 android:layout_height="50dp"
-                android:background="@drawable/editormeta_rounded_button_white" />
+                android:background="@mipmap/duplicar_36x36_ldpi" />
 
             <TextView
                 android:layout_width="match_parent"
@@ -77,7 +77,7 @@
                 android:id="@+id/btnBorrar"
                 android:layout_width="50dp"
                 android:layout_height="50dp"
-                android:background="@drawable/editormeta_rounded_button_white" />
+                android:background="@mipmap/borrar_36x36_ldpi" />
 
             <TextView
                 android:layout_width="match_parent"
@@ -115,7 +115,7 @@
             android:id="@+id/btnGuardar"
             android:layout_width="50dp"
             android:layout_height="50dp"
-            android:background="@drawable/editormeta_rounded_button_white" />
+            android:background="@mipmap/guardar_36x36_ldpi" />
 
         <TextView
             android:layout_width="75dp"

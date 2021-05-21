@@ -81,7 +81,7 @@
                     <ImageButton
                         android:layout_width="50dp"
                         android:layout_height="50dp"
-                        android:background="@drawable/rounded_btn_hoy_me_siento" />
+                        android:background="@mipmap/feliz_36x36_ldpi" />
 
                     <TextView
                         android:layout_width="match_parent"
@@ -101,7 +101,7 @@
                     <ImageButton
                         android:layout_width="50dp"
                         android:layout_height="50dp"
-                        android:background="@drawable/rounded_btn_hoy_me_siento" />
+                        android:background="@mipmap/calmado_36x36_ldpi" />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -121,7 +121,7 @@
                     <ImageButton
                         android:layout_width="50dp"
                         android:layout_height="50dp"
-                        android:background="@drawable/rounded_btn_hoy_me_siento" />
+                        android:background="@mipmap/activo_36x36_ldpi" />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -141,7 +141,7 @@
                     <ImageButton
                         android:layout_width="50dp"
                         android:layout_height="50dp"
-                        android:background="@drawable/rounded_btn_hoy_me_siento" />
+                        android:background="@mipmap/triste_36x36_ldpi" />
 
                     <TextView
                         android:layout_width="match_parent"
@@ -161,7 +161,7 @@
                     <ImageButton
                         android:layout_width="50dp"
                         android:layout_height="50dp"
-                        android:background="@drawable/rounded_btn_hoy_me_siento" />
+                        android:background="@mipmap/irritado_36x36_ldpi" />
 
                     <TextView
                         android:layout_width="match_parent"
@@ -181,7 +181,7 @@
                     <ImageButton
                         android:layout_width="50dp"
                         android:layout_height="50dp"
-                        android:background="@drawable/rounded_btn_hoy_me_siento" />
+                        android:background="@mipmap/ansioso_36x36_ldpi" />
 
                     <TextView
                         android:layout_width="match_parent"
@@ -228,7 +228,7 @@
                     <ImageButton
                         android:layout_width="50dp"
                         android:layout_height="50dp"
-                        android:background="@drawable/rounded_btn_hoy_me_siento" />
+                        android:background="@mipmap/dolorcabeza_48x48_mdpi" />
 
                     <TextView
                         android:layout_width="match_parent"
@@ -249,7 +249,7 @@
                     <ImageButton
                         android:layout_width="50dp"
                         android:layout_height="50dp"
-                        android:background="@drawable/rounded_btn_hoy_me_siento" />
+                        android:background="@mipmap/insomnio_36x36_ldpi" />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -269,7 +269,7 @@
                     <ImageButton
                         android:layout_width="50dp"
                         android:layout_height="50dp"
-                        android:background="@drawable/rounded_btn_hoy_me_siento" />
+                        android:background="@mipmap/diarrea_36x36_ldpi" />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -289,7 +289,7 @@
                     <ImageButton
                         android:layout_width="50dp"
                         android:layout_height="50dp"
-                        android:background="@drawable/rounded_btn_hoy_me_siento" />
+                        android:background="@mipmap/gripe_36x36_ldpi" />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -309,7 +309,7 @@
                     <ImageButton
                         android:layout_width="50dp"
                         android:layout_height="50dp"
-                        android:background="@drawable/rounded_btn_hoy_me_siento" />
+                        android:background="@mipmap/tos_36x36_ldpi" />
 
                     <TextView
                         android:layout_width="match_parent"
@@ -329,7 +329,7 @@
                     <ImageButton
                         android:layout_width="50dp"
                         android:layout_height="50dp"
-                        android:background="@drawable/rounded_btn_hoy_me_siento" />
+                        android:background="@mipmap/dolorgarganta_36x36_ldpi" />
 
                     <TextView
                         android:layout_width="match_parent"
