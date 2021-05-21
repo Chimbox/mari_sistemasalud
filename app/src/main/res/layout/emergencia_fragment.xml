@@ -44,6 +44,7 @@
         </Button>
 
         <Button
+            android:id="@+id/btn_necesitoAyuda_emergencia"
             android:layout_width="150dp"
             android:layout_height="100dp"
             android:background="@drawable/little_card_view_background"

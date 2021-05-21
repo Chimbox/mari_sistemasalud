@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background"
+    tools:context=".ui.emergencia.NecesitoAyudaFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center|center_vertical"
+        android:layout_marginTop="20dp"
+        >
+
+        <ImageButton
+            android:id="@+id/btnRegresar_necesitoAyuda"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/ic_left"
+            android:scaleType="fitXY"
+            android:background="@color/transparent"
+            android:layout_width="40dp"
+            android:layout_height="40dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_height="wrap_content"
+            android:text="@string/necesito_ayuda"
+            android:textColor="@color/white"
+            android:textSize="35sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginRight="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="20dp"
+        >
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="@drawable/little_card_view_background"
+            android:textSize="20sp"
+            android:textColor="@color/text_color_gray"
+            android:textAllCaps="false"
+            android:gravity="center"
+            android:drawableLeft="@mipmap/telefono_48x48_mdpi"
+            android:paddingLeft="15dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/numeros_emergencia">
+        </Button>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="@drawable/little_card_view_background"
+            android:textSize="20sp"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/text_color_gray"
+            android:textAllCaps="false"
+            android:drawableLeft="@mipmap/hospital_48x48_mdpi"
+            android:paddingLeft="15dp"
+            android:gravity="center"
+            android:text="@string/hospitales_cercanos">
+        </Button>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="@drawable/little_card_view_background"
+            android:textSize="20sp"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/text_color_gray"
+            android:textAllCaps="false"
+            android:drawableLeft="@mipmap/famacia_48x48_mdpi"
+            android:paddingLeft="15dp"
+            android:gravity="center"
+            android:text="@string/farmacias_cercanas">
+        </Button>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="@drawable/little_card_view_background"
+            android:textSize="20sp"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/text_color_gray"
+            android:drawableLeft="@mipmap/ayuda_48x48_mdpi"
+            android:paddingLeft="15dp"
+            android:textAllCaps="false"
+            android:gravity="center"
+            android:text="@string/necesito_atencion">
+        </Button>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -16,7 +16,7 @@ class LoginActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)
-
+        auth= FirebaseAuth.getInstance()
         btnEntrar.setOnClickListener {
             if(!etEmail.text.toString().isNullOrBlank()&&!etPassword.text.toString().isNullOrBlank()){
                 login(etEmail.text.toString(), etPassword.text.toString())

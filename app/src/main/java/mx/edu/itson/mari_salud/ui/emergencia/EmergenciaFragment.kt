@@ -1,13 +1,18 @@
 package mx.edu.itson.mari_salud.ui.emergencia
 
+import android.content.Intent
 import androidx.lifecycle.ViewModelProvider
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
-import android.view.ViewGroup
-import kotlinx.android.synthetic.main.emergencia_fragment.view.*
 import mx.edu.itson.mari_salud.R
+import android.view.ViewGroup
+import android.widget.Button
+import kotlinx.android.synthetic.*
+import kotlinx.android.synthetic.main.emergencia_fragment.*
+import kotlinx.android.synthetic.main.emergencia_fragment.view.*
+
 
 class EmergenciaFragment : Fragment() {
 
@@ -31,6 +36,10 @@ class EmergenciaFragment : Fragment() {
 
         var adapter=EmergenciaListViewAdapter(lstEmergencias, context)
 
+        root.btn_necesitoAyuda_emergencia.setOnClickListener {
+            var intent= Intent(context,NecesitoAyudaActivity::class.java)
+            startActivity(intent)
+        }
         root.lvEmergencias.adapter=adapter
 
         return root
