@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "69816143621",
+    "project_id": "mari-asistente",
+    "storage_bucket": "mari-asistente.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:69816143621:android:31a2b1011ec6635360716c",
+        "android_client_info": {
+          "package_name": "mx.edu.itson.mari_salud"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "69816143621-d76chjg17opem212frrmtjrmjcheekvk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCMY_roAAnMOPSBrJM3muCNZw0Q_1n4pWI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "69816143621-d76chjg17opem212frrmtjrmjcheekvk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
