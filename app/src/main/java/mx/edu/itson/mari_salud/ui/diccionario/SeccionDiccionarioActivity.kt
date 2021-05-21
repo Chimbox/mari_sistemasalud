@@ -7,6 +7,7 @@ import mx.edu.itson.mari_salud.R
 
 class SeccionDiccionarioActivity : AppCompatActivity() {
     var lstSeccionesDiccionario=ArrayList<SeccionDiccionario>()
+    private var guardarbtn:Boolean = false;
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -31,7 +32,13 @@ class SeccionDiccionarioActivity : AppCompatActivity() {
         }
 
         btnGuardar.setOnClickListener {
-            btnGuardar.setImageResource(R.mipmap.favorito2_48x48_mdpi)
+            if (guardarbtn==false) {
+                btnGuardar.setImageResource(R.mipmap.favorito2_48x48_mdpi)
+                guardarbtn=true
+            }else{
+                btnGuardar.setImageResource(R.mipmap.favorito_48x48_mdpi)
+                guardarbtn=false
+            }
         }
     }
 }
