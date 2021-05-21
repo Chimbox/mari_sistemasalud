@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="@color/background"
     android:orientation="vertical"
     tools:context=".ui.como_sientes.CalendarioActivity">
@@ -33,10 +34,13 @@
             android:layout_marginRight="50dp"
             android:layout_marginTop="20dp">
 
+
             <Button
                 android:id="@+id/btnEstadoAnimo"
                 android:layout_width="match_parent"
                 android:layout_height="100dp"
+                android:drawableLeft="@mipmap/feliz_96x96_xhdpi"
+                android:paddingLeft="20dp"
                 android:background="@drawable/little_card_view_background"
                 android:textSize="20sp"
                 android:textStyle="bold"
@@ -51,6 +55,8 @@
                 android:id="@+id/btnSintomas"
                 android:layout_width="match_parent"
                 android:layout_height="100dp"
+                android:drawableLeft="@mipmap/gripe_96x96_xhdpi"
+                android:paddingLeft="20dp"
                 android:background="@drawable/little_card_view_background"
                 android:textSize="20sp"
                 android:textStyle="bold"
@@ -64,6 +70,8 @@
             <Button
                 android:id="@+id/btnMetas"
                 android:layout_width="match_parent"
+                android:drawableLeft="@mipmap/metas_144x144_xxhdpi"
+                android:paddingLeft="30dp"
                 android:layout_height="100dp"
                 android:background="@drawable/little_card_view_background"
                 android:textSize="20sp"
