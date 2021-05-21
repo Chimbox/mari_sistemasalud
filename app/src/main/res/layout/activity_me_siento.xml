@@ -79,6 +79,7 @@
                     android:orientation="vertical">
 
                     <ImageButton
+                        android:id="@+id/btn_feliz_hoyMeSiento"
                         android:layout_width="50dp"
                         android:layout_height="50dp"
                         android:background="@mipmap/feliz_36x36_ldpi" />
@@ -99,6 +100,7 @@
                     android:orientation="vertical">
 
                     <ImageButton
+                        android:id="@+id/btn_calmado_hoyMeSiento"
                         android:layout_width="50dp"
                         android:layout_height="50dp"
                         android:background="@mipmap/calmado_36x36_ldpi" />
@@ -119,6 +121,7 @@
                     android:orientation="vertical">
 
                     <ImageButton
+                        android:id="@+id/btn_activo_hoyMeSiento"
                         android:layout_width="50dp"
                         android:layout_height="50dp"
                         android:background="@mipmap/activo_36x36_ldpi" />
@@ -139,6 +142,7 @@
                     android:orientation="vertical">
 
                     <ImageButton
+                        android:id="@+id/btn_triste_hoyMeSiento"
                         android:layout_width="50dp"
                         android:layout_height="50dp"
                         android:background="@mipmap/triste_36x36_ldpi" />
@@ -159,6 +163,7 @@
                     android:orientation="vertical">
 
                     <ImageButton
+                        android:id="@+id/btn_irritado_hoyMeSiento"
                         android:layout_width="50dp"
                         android:layout_height="50dp"
                         android:background="@mipmap/irritado_36x36_ldpi" />
@@ -179,6 +184,7 @@
                     android:orientation="vertical">
 
                     <ImageButton
+                        android:id="@+id/btn_ansioso_hoyMeSiento"
                         android:layout_width="50dp"
                         android:layout_height="50dp"
                         android:background="@mipmap/ansioso_36x36_ldpi" />
@@ -226,6 +232,7 @@
                     android:orientation="vertical">
 
                     <ImageButton
+                        android:id="@+id/btn_dolorCabeza_hoyMeSiento"
                         android:layout_width="50dp"
                         android:layout_height="50dp"
                         android:background="@mipmap/dolorcabeza_48x48_mdpi" />
@@ -247,6 +254,7 @@
                     android:orientation="vertical">
 
                     <ImageButton
+                        android:id="@+id/btn_insomnio_hoyMeSiento"
                         android:layout_width="50dp"
                         android:layout_height="50dp"
                         android:background="@mipmap/insomnio_36x36_ldpi" />
@@ -267,6 +275,7 @@
                     android:orientation="vertical">
 
                     <ImageButton
+                        android:id="@+id/btn_diarrea_hoyMeSiento"
                         android:layout_width="50dp"
                         android:layout_height="50dp"
                         android:background="@mipmap/diarrea_36x36_ldpi" />
@@ -287,6 +296,7 @@
                     android:orientation="vertical">
 
                     <ImageButton
+                        android:id="@+id/btn_gripe_hoyMeSiento"
                         android:layout_width="50dp"
                         android:layout_height="50dp"
                         android:background="@mipmap/gripe_36x36_ldpi" />
@@ -307,6 +317,7 @@
                     android:orientation="vertical">
 
                     <ImageButton
+                        android:id="@+id/btn_tos_hoyMeSiento"
                         android:layout_width="50dp"
                         android:layout_height="50dp"
                         android:background="@mipmap/tos_36x36_ldpi" />
@@ -327,6 +338,7 @@
                     android:orientation="vertical">
 
                     <ImageButton
+                        android:id="@+id/btn_dolorGarganta_hoyMeSiento"
                         android:layout_width="50dp"
                         android:layout_height="50dp"
                         android:background="@mipmap/dolorgarganta_36x36_ldpi" />
