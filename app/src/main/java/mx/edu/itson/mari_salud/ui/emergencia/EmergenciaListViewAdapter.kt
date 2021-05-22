@@ -7,6 +7,7 @@ import android.view.ViewGroup
 import android.widget.BaseAdapter
 import kotlinx.android.synthetic.main.emergencia_item.view.*
 import mx.edu.itson.mari_salud.R
+import mx.edu.itson.mari_salud.ui.dominio.Emergencia
 
 class EmergenciaListViewAdapter : BaseAdapter {
 

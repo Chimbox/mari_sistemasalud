@@ -9,6 +9,7 @@ import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import kotlinx.android.synthetic.main.fragment_metas.view.*
 import mx.edu.itson.mari_salud.R
+import mx.edu.itson.mari_salud.ui.dominio.Meta
 
 class MetasFragment : Fragment() {
 

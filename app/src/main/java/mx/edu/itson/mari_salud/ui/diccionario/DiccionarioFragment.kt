@@ -11,6 +11,9 @@ import android.widget.ListView
 import kotlinx.android.synthetic.main.fragment_diccionario.*
 import kotlinx.android.synthetic.main.fragment_diccionario.view.*
 import mx.edu.itson.mari_salud.R
+import mx.edu.itson.mari_salud.ui.dominio.CategoriaDiccionario
+import mx.edu.itson.mari_salud.ui.dominio.Diccionario
+import mx.edu.itson.mari_salud.ui.dominio.SeccionDiccionario
 
 class DiccionarioFragment : Fragment() {
 
@@ -28,10 +31,10 @@ class DiccionarioFragment : Fragment() {
     ): View? {
         val root=inflater.inflate(R.layout.fragment_diccionario, container, false)
 
-        var medicina=CategoriaDiccionario("Medicina")
-        var enfermedad=CategoriaDiccionario("Enfermedad")
-        var guardados=CategoriaDiccionario("Guardados")
-        var historial=CategoriaDiccionario("Historial")
+        var medicina= CategoriaDiccionario("Medicina")
+        var enfermedad= CategoriaDiccionario("Enfermedad")
+        var guardados= CategoriaDiccionario("Guardados")
+        var historial= CategoriaDiccionario("Historial")
 
         var seccionesParacetamol=ArrayList<SeccionDiccionario>()
         seccionesParacetamol.add(SeccionDiccionario("¿Qué cura?","Dolor de cabeza.\nDolor de espalda."))
@@ -65,7 +68,7 @@ class DiccionarioFragment : Fragment() {
        rgDiccionarios.setOnCheckedChangeListener { radioGroup, i ->
 
             if(i>-1){
-                var categoria:CategoriaDiccionario=CategoriaDiccionario()
+                var categoria: CategoriaDiccionario = CategoriaDiccionario()
                 when(rgDiccionarios.checkedRadioButtonId){
                     btnMedicinas.id -> categoria = medicina
                     btnEnfermedad.id -> categoria = enfermedad

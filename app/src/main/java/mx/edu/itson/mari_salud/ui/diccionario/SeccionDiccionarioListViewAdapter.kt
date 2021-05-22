@@ -5,9 +5,9 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.BaseAdapter
-import kotlinx.android.synthetic.main.diccionario_item.view.*
 import kotlinx.android.synthetic.main.seccion_diccionario_item.view.*
 import mx.edu.itson.mari_salud.R
+import mx.edu.itson.mari_salud.ui.dominio.SeccionDiccionario
 
 class SeccionDiccionarioListViewAdapter : BaseAdapter {
     var lstSecciones=ArrayList<SeccionDiccionario>()

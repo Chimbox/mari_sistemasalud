@@ -8,10 +8,8 @@ import android.view.LayoutInflater
 import android.view.View
 import mx.edu.itson.mari_salud.R
 import android.view.ViewGroup
-import android.widget.Button
-import kotlinx.android.synthetic.*
-import kotlinx.android.synthetic.main.emergencia_fragment.*
 import kotlinx.android.synthetic.main.emergencia_fragment.view.*
+import mx.edu.itson.mari_salud.ui.dominio.Emergencia
 
 
 class EmergenciaFragment : Fragment() {

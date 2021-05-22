@@ -4,6 +4,8 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import kotlinx.android.synthetic.main.activity_seccion_diccionario.*
 import mx.edu.itson.mari_salud.R
+import mx.edu.itson.mari_salud.ui.dominio.Diccionario
+import mx.edu.itson.mari_salud.ui.dominio.SeccionDiccionario
 
 class SeccionDiccionarioActivity : AppCompatActivity() {
     var lstSeccionesDiccionario=ArrayList<SeccionDiccionario>()

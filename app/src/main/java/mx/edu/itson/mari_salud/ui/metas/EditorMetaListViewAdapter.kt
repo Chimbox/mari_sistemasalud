@@ -9,6 +9,7 @@ import android.widget.BaseAdapter
 import android.widget.Toast
 import kotlinx.android.synthetic.main.editor_metas_item.view.*
 import mx.edu.itson.mari_salud.R
+import mx.edu.itson.mari_salud.ui.dominio.Meta
 
 class EditorMetaListViewAdapter : BaseAdapter {
 

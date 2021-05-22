@@ -10,6 +10,10 @@ import androidx.navigation.ui.setupWithNavController
 
 class MenuActivity : AppCompatActivity() {
 
+    companion object{
+        lateinit var idDocumentoPerfil: String
+    }
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_menu)

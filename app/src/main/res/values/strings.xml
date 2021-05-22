@@ -84,5 +84,7 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="guardar">Guardar</string>
     <string name="ingresa_nota_sintoma">Ingresa un síntoma o una nota</string>
+    <string name="nombre">Nombre(s)</string>
+    <string name="apellido">Apellido</string>
 
 </resources>

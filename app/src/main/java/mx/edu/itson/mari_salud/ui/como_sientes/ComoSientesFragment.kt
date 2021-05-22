@@ -7,10 +7,13 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
+import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.firestore.FirebaseFirestore
 import kotlinx.android.synthetic.main.fragment_como_sientes.view.*
 import mx.edu.itson.mari_salud.R
 
 class ComoSientesFragment : Fragment() {
+
 
     private lateinit var notificationsViewModel: ComoSientesViewModel
 

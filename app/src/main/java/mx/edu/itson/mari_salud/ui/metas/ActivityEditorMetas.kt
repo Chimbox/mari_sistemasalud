@@ -6,6 +6,7 @@ import kotlinx.android.synthetic.main.activity_editor_metas.*
 import kotlinx.android.synthetic.main.activity_editor_metas.btnRegresar
 import kotlinx.android.synthetic.main.fragment_metas.lvMetas
 import mx.edu.itson.mari_salud.R
+import mx.edu.itson.mari_salud.ui.dominio.Meta
 
 class ActivityEditorMetas : AppCompatActivity() {
 

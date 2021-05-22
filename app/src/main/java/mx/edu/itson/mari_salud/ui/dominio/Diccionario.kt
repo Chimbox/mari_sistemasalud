@@ -1,6 +1,5 @@
-package mx.edu.itson.mari_salud.ui.diccionario
+package mx.edu.itson.mari_salud.ui.dominio
 
-import android.os.Parcel
 import android.os.Parcelable
 import kotlinx.android.parcel.Parcelize
 
