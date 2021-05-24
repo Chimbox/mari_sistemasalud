@@ -65,11 +65,11 @@ class MeSientoActivity : AppCompatActivity() {
 
         btn_feliz_hoyMeSiento.setOnClickListener {
             if (!lstEstadosAnimo.contains(EstadoAnimo.FELIZ)) {
-                btn_feliz_hoyMeSiento.setImageResource(R.mipmap.feliz_activo_48x48_mdpi)
+                btn_feliz_hoyMeSiento.setImageResource(R.mipmap.feliz_acitvo_72x72_mdpi)
                 lstEstadosAnimo.add(EstadoAnimo.FELIZ)
                 actualizaEstadosAnimo()
             } else {
-                btn_feliz_hoyMeSiento.setImageResource(R.mipmap.feliz_48x48_mdpi)
+                btn_feliz_hoyMeSiento.setImageResource(R.mipmap.feliz_72x72_hdpi)
                 lstEstadosAnimo.remove(EstadoAnimo.FELIZ)
                 actualizaEstadosAnimo()
             }
@@ -77,11 +77,11 @@ class MeSientoActivity : AppCompatActivity() {
 
         btn_calmado_hoyMeSiento.setOnClickListener {
             if (!lstEstadosAnimo.contains(EstadoAnimo.CALMADO)) {
-                btn_calmado_hoyMeSiento.setImageResource(R.mipmap.calmado_activo_48x48_mdpi)
+                btn_calmado_hoyMeSiento.setImageResource(R.mipmap.calmado_acitvo_72x72_mdpi)
                 lstEstadosAnimo.add(EstadoAnimo.CALMADO)
                 actualizaEstadosAnimo()
             } else {
-                btn_calmado_hoyMeSiento.setImageResource(R.mipmap.calmado_48x48_mdpi)
+                btn_calmado_hoyMeSiento.setImageResource(R.mipmap.calmado_72x72_hdpi)
                 lstEstadosAnimo.remove(EstadoAnimo.CALMADO)
                 actualizaEstadosAnimo()
             }
@@ -89,11 +89,11 @@ class MeSientoActivity : AppCompatActivity() {
 
         btn_activo_hoyMeSiento.setOnClickListener {
             if (!lstEstadosAnimo.contains(EstadoAnimo.ACTIVO)) {
-                btn_activo_hoyMeSiento.setImageResource(R.mipmap.activo_activo_48x48_mdpi)
+                btn_activo_hoyMeSiento.setImageResource(R.mipmap.activo_acitvo_72x72_mdpi)
                 lstEstadosAnimo.add(EstadoAnimo.ACTIVO)
                 actualizaEstadosAnimo()
             } else {
-                btn_activo_hoyMeSiento.setImageResource(R.mipmap.activo_48x48_mdpi)
+                btn_activo_hoyMeSiento.setImageResource(R.mipmap.activo_96x96_xhdpi)
                 lstEstadosAnimo.remove(EstadoAnimo.ACTIVO)
                 actualizaEstadosAnimo()
             }
@@ -101,11 +101,11 @@ class MeSientoActivity : AppCompatActivity() {
 
         btn_triste_hoyMeSiento.setOnClickListener {
             if (!lstEstadosAnimo.contains(EstadoAnimo.TRISTE)) {
-                btn_triste_hoyMeSiento.setImageResource(R.mipmap.triste_activo_48x48_mdpi)
+                btn_triste_hoyMeSiento.setImageResource(R.mipmap.triste_acitvo_72x72_mdpi)
                 lstEstadosAnimo.add(EstadoAnimo.TRISTE)
                 actualizaEstadosAnimo()
             } else {
-                btn_triste_hoyMeSiento.setImageResource(R.mipmap.triste_48x48_mdpi)
+                btn_triste_hoyMeSiento.setImageResource(R.mipmap.triste_72x72_hdpi)
                 lstEstadosAnimo.remove(EstadoAnimo.TRISTE)
                 actualizaEstadosAnimo()
             }
@@ -113,11 +113,11 @@ class MeSientoActivity : AppCompatActivity() {
 
         btn_irritado_hoyMeSiento.setOnClickListener {
             if (!lstEstadosAnimo.contains(EstadoAnimo.IRRITADO)) {
-                btn_irritado_hoyMeSiento.setImageResource(R.mipmap.irritado_activo_48x48_mdpi)
+                btn_irritado_hoyMeSiento.setImageResource(R.mipmap.irritado_acitvo_72x72_mdpi)
                 lstEstadosAnimo.add(EstadoAnimo.IRRITADO)
                 actualizaEstadosAnimo()
             } else {
-                btn_irritado_hoyMeSiento.setImageResource(R.mipmap.irritado_48x48_mdpi)
+                btn_irritado_hoyMeSiento.setImageResource(R.mipmap.irritado_72x72_hdpi)
                 lstEstadosAnimo.remove(EstadoAnimo.IRRITADO)
                 actualizaEstadosAnimo()
             }
@@ -125,11 +125,11 @@ class MeSientoActivity : AppCompatActivity() {
 
         btn_ansioso_hoyMeSiento.setOnClickListener {
             if (!lstEstadosAnimo.contains(EstadoAnimo.ANSIAS)) {
-                btn_ansioso_hoyMeSiento.setImageResource(R.mipmap.ansioso_activo_48x48_mdpi)
+                btn_ansioso_hoyMeSiento.setImageResource(R.mipmap.ansioso_acitvo_72x72_mdpi)
                 lstEstadosAnimo.add(EstadoAnimo.ANSIAS)
                 actualizaEstadosAnimo()
             } else {
-                btn_ansioso_hoyMeSiento.setImageResource(R.mipmap.ansioso_48x48_mdpi)
+                btn_ansioso_hoyMeSiento.setImageResource(R.mipmap.ansioso_72x72_hdpi)
                 lstEstadosAnimo.remove(EstadoAnimo.ANSIAS)
                 actualizaEstadosAnimo()
             }
@@ -137,11 +137,11 @@ class MeSientoActivity : AppCompatActivity() {
 
         btn_dolorCabeza_hoyMeSiento.setOnClickListener {
             if (!lstSintomas.contains(Sintoma.DOLOR_CABEZA)) {
-                btn_dolorCabeza_hoyMeSiento.setImageResource(R.mipmap.dolorcabeza_activo_48x48_mdpi)
+                btn_dolorCabeza_hoyMeSiento.setImageResource(R.mipmap.dolrocabeza_acitvo_72x72_mdpi)
                 lstSintomas.add(Sintoma.DOLOR_CABEZA)
                 actualizaSintomas()
             } else {
-                btn_dolorCabeza_hoyMeSiento.setImageResource(R.mipmap.dolorcabeza_48x48_mdpi)
+                btn_dolorCabeza_hoyMeSiento.setImageResource(R.mipmap.dolorcabeza_72x72_hdpi)
                 lstSintomas.remove(Sintoma.DOLOR_CABEZA)
                 actualizaSintomas()
             }
@@ -149,11 +149,11 @@ class MeSientoActivity : AppCompatActivity() {
 
         btn_insomnio_hoyMeSiento.setOnClickListener {
             if (!lstSintomas.contains(Sintoma.INSOMNIO)) {
-                btn_insomnio_hoyMeSiento.setImageResource(R.mipmap.insomnio_activo_48x48_mdpi)
+                btn_insomnio_hoyMeSiento.setImageResource(R.mipmap.insomnio_acitvo_72x72_mdpi)
                 lstSintomas.add(Sintoma.INSOMNIO)
                 actualizaSintomas()
             } else {
-                btn_insomnio_hoyMeSiento.setImageResource(R.mipmap.insomnio_48x48_mdpi)
+                btn_insomnio_hoyMeSiento.setImageResource(R.mipmap.insomnio_72x72_hdpi)
                 lstSintomas.remove(Sintoma.INSOMNIO)
                 actualizaSintomas()
             }
@@ -161,11 +161,11 @@ class MeSientoActivity : AppCompatActivity() {
 
         btn_diarrea_hoyMeSiento.setOnClickListener {
             if (!lstSintomas.contains(Sintoma.DIARREA)) {
-                btn_diarrea_hoyMeSiento.setImageResource(R.mipmap.diarrea_activo_48x48_mdpi)
+                btn_diarrea_hoyMeSiento.setImageResource(R.mipmap.diarrea_acitvo_72x72_mdpi)
                 lstSintomas.add(Sintoma.DIARREA)
                 actualizaSintomas()
             } else {
-                btn_diarrea_hoyMeSiento.setImageResource(R.mipmap.diarrea_48x48_mdpi)
+                btn_diarrea_hoyMeSiento.setImageResource(R.mipmap.diarrea_72x72_hdpi)
                 lstSintomas.remove(Sintoma.DIARREA)
                 actualizaSintomas()
             }
@@ -173,11 +173,11 @@ class MeSientoActivity : AppCompatActivity() {
 
         btn_gripe_hoyMeSiento.setOnClickListener {
             if (!lstSintomas.contains(Sintoma.GRIPE)) {
-                btn_gripe_hoyMeSiento.setImageResource(R.mipmap.gripe_activo_48x48_mdpi)
+                btn_gripe_hoyMeSiento.setImageResource(R.mipmap.gripe_acitvo_72x72_mdpi)
                 lstSintomas.add(Sintoma.GRIPE)
                 actualizaSintomas()
             } else {
-                btn_gripe_hoyMeSiento.setImageResource(R.mipmap.gripe_36x36_ldpi)
+                btn_gripe_hoyMeSiento.setImageResource(R.mipmap.gripe_72x72_hdpi)
                 lstSintomas.remove(Sintoma.GRIPE)
                 actualizaSintomas()
             }
@@ -185,11 +185,11 @@ class MeSientoActivity : AppCompatActivity() {
 
         btn_tos_hoyMeSiento.setOnClickListener {
             if (!lstSintomas.contains(Sintoma.TOS)) {
-                btn_tos_hoyMeSiento.setImageResource(R.mipmap.tos_activo_48x48_mdpi)
+                btn_tos_hoyMeSiento.setImageResource(R.mipmap.tos_acitvo_72x72_mdpi)
                 lstSintomas.add(Sintoma.TOS)
                 actualizaSintomas()
             } else {
-                btn_tos_hoyMeSiento.setImageResource(R.mipmap.tos_48x48_mdpi)
+                btn_tos_hoyMeSiento.setImageResource(R.mipmap.tos_72x72_hdpi)
                 lstSintomas.remove(Sintoma.TOS)
                 actualizaSintomas()
             }
@@ -197,11 +197,11 @@ class MeSientoActivity : AppCompatActivity() {
 
         btn_dolorGarganta_hoyMeSiento.setOnClickListener {
             if (!lstSintomas.contains(Sintoma.DOLOR_GARGANTA)) {
-                btn_dolorGarganta_hoyMeSiento.setImageResource(R.mipmap.dolorgarganta_activo_48x48_mdpi)
+                btn_dolorGarganta_hoyMeSiento.setImageResource(R.mipmap.dolorcabeza_acitvo_72x72_mdpi)
                 lstSintomas.add(Sintoma.DOLOR_GARGANTA)
                 actualizaSintomas()
             } else {
-                btn_dolorGarganta_hoyMeSiento.setImageResource(R.mipmap.dolorgarganta_48x48_mdpi)
+                btn_dolorGarganta_hoyMeSiento.setImageResource(R.mipmap.dolorgarganta_72x72_hdpi)
                 lstSintomas.remove(Sintoma.DOLOR_GARGANTA)
                 actualizaSintomas()
             }
