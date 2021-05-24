@@ -19,9 +19,9 @@ class MeSientoActivity : AppCompatActivity() {
 
     private lateinit var auth: FirebaseAuth
     private lateinit var db: FirebaseFirestore
-    private var lstEstadosAnimo=ArrayList<EstadoAnimo>()
-    private var lstSintomas=ArrayList<Sintoma>()
-    private var lstEstadosPersonalizado=ArrayList<Estado>()
+    private var lstEstadosAnimo = ArrayList<EstadoAnimo>()
+    private var lstSintomas = ArrayList<Sintoma>()
+    private var lstEstadosPersonalizado = ArrayList<Estado>()
 
 
     var lstEstados = ArrayList<Estado>()
@@ -32,8 +32,8 @@ class MeSientoActivity : AppCompatActivity() {
         setContentView(R.layout.activity_me_siento)
         val current = LocalDateTime.now()
 
-        auth= FirebaseAuth.getInstance()
-        db= FirebaseFirestore.getInstance()
+        auth = FirebaseAuth.getInstance()
+        db = FirebaseFirestore.getInstance()
 
         btn_back_hoySiento.setOnClickListener {
             finish()
@@ -43,12 +43,13 @@ class MeSientoActivity : AppCompatActivity() {
             .document(MenuActivity.idDocumentoPerfil)
             .get()
             .addOnSuccessListener {
-                var lstStringEstadosAnimo=it.get("estados_animo") as ArrayList<String>
-                var lstStringSintomas=it.get("sintomas") as ArrayList<String>
-                var lstStringEstadosPersonalizado=it.get("estados_personalizado") as ArrayList<String>
+                var lstStringEstadosAnimo = it.get("estados_animo") as ArrayList<String>
+                var lstStringSintomas = it.get("sintomas") as ArrayList<String>
+                var lstStringEstadosPersonalizado =
+                    it.get("estados_personalizado") as ArrayList<String>
 
                 lstStringEstadosAnimo.forEach {
-                    when(it){
+                    when (it) {
                         EstadoAnimo.FELIZ.toString() -> {
                             lstEstadosAnimo.add(EstadoAnimo.FELIZ)
                             btn_feliz_hoyMeSiento.setImageResource(R.mipmap.feliz_acitvo_72x72_mdpi)
@@ -79,18 +80,34 @@ class MeSientoActivity : AppCompatActivity() {
                     }
                 }
 
-                lstStringSintomas.forEach {
-                    when(it){
-
+                lstStringSintomas.forEach { it ->
+                    when (it) {
+                        Sintoma.DIARREA.toString() -> {
+                            lstSintomas.add(Sintoma.DIARREA)
+                            btn_diarrea_hoyMeSiento.setImageResource(R.mipmap.diarrea_acitvo_72x72_mdpi)
+                        }
+                        Sintoma.DOLOR_CABEZA.toString() -> {
+                            lstSintomas.add(Sintoma.DOLOR_CABEZA)
+                            btn_dolorCabeza_hoyMeSiento.setImageResource(R.mipmap.dolrocabeza_acitvo_72x72_mdpi)
+                        }
+                        Sintoma.DOLOR_GARGANTA.toString() -> {
+                            lstSintomas.add(Sintoma.DOLOR_GARGANTA)
+                            btn_dolorGarganta_hoyMeSiento.setImageResource(R.mipmap.dolorcabeza_acitvo_72x72_mdpi)
+                        }
+                        Sintoma.GRIPE.toString() -> {
+                            lstSintomas.add(Sintoma.GRIPE)
+                            btn_gripe_hoyMeSiento.setImageResource(R.mipmap.gripe_acitvo_72x72_mdpi)
+                        }
+                        Sintoma.INSOMNIO.toString() -> {
+                            lstSintomas.add(Sintoma.INSOMNIO)
+                            btn_insomnio_hoyMeSiento.setImageResource(R.mipmap.insomnio_acitvo_72x72_mdpi)
+                        }
+                        Sintoma.TOS.toString() -> {
+                            lstSintomas.add(Sintoma.TOS)
+                            btn_tos_hoyMeSiento.setImageResource(R.mipmap.tos_acitvo_72x72_mdpi)
+                        }
                     }
                 }
-
-               /* lstEstadosAnimo.forEach {
-                    when(it.toString()){
-                        EstadoAnimo.FELIZ.toString()->
-                            btn_feliz_hoyMeSiento.setImageResource(R.mipmap.feliz_activo_48x48_mdpi)
-                    }
-                }*/
 
             }
 
@@ -253,17 +270,19 @@ class MeSientoActivity : AppCompatActivity() {
         }
     }
 
-    private fun actualizaEstadosAnimo(){
+    private fun actualizaEstadosAnimo() {
         db.collection("perfil")
             .document(MenuActivity.idDocumentoPerfil)
             .update("estados_animo", lstEstadosAnimo)
     }
-    private fun actualizaSintomas(){
+
+    private fun actualizaSintomas() {
         db.collection("perfil")
             .document(MenuActivity.idDocumentoPerfil)
             .update("sintomas", lstSintomas)
     }
-    private fun actualizaEstadosPersonalizado(){
+
+    private fun actualizaEstadosPersonalizado() {
         db.collection("perfil")
             .document(MenuActivity.idDocumentoPerfil)
             .update("estados_personalizado", lstEstadosPersonalizado)
