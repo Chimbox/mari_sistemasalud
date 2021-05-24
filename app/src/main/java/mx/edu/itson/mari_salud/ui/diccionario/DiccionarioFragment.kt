@@ -40,19 +40,24 @@ class DiccionarioFragment : Fragment() {
         seccionesParacetamol.add(SeccionDiccionario("¿Qué cura?","Dolor de cabeza.\nDolor de espalda."))
 
         var seccionesDramamine=ArrayList<SeccionDiccionario>()
-        seccionesDramamine.add(SeccionDiccionario("¿Para qué sirve?","Prevención de mareos."))
-        seccionesDramamine.add(SeccionDiccionario("Modo de uso", "Tomar una tableta antes de viajar."))
+        seccionesDramamine.add(SeccionDiccionario("¿Para qué sirve?","Ayuda a prevenir y aliviar náusea, mareo y vómito asociados al movimiento."))
+        seccionesDramamine.add(SeccionDiccionario("Modo de uso", "TABLETAS: Vía de administración oral. Tomar:\n" +
+                "Adultos y niños mayores de 12 años: 1 a 2 tabletas cada 4 - 6 horas, sin exceder de 8 tabletas en 24 horas.\n" +
+                "Niños de 6 a 12 años de edad: 1/2 a 1 tableta cada 6 - 8 horas sin exceder de 3 tabletas en 24 horas.\n" +
+                "Niños de 2 a 6 años: 1/2 tableta cada 6 - 8 horas, sin exceder de 1 1/2 tableta en 24 horas.\n" +
+                "\n" +
+                "Tomar la primera dosis de DRAMAMINE® 30 minutos antes de iniciar el viaje o la actividad que provoca el mareo.."))
 
         var seccionesDolorCabeza=ArrayList<SeccionDiccionario>()
-        seccionesDolorCabeza.add(SeccionDiccionario("Definición","Lorem ipsum is simply dummy text of the printing and typesetting industry."))
-        seccionesDolorCabeza.add(SeccionDiccionario("Síntomas","Se siente medio feo.\nOtro síntoma."))
+        seccionesDolorCabeza.add(SeccionDiccionario("Definición","Sensación dolorosa en cualquier parte de la cabeza, que va desde un dolor agudo a un dolor leve y puede ocurrir con otros síntomas."))
+        seccionesDolorCabeza.add(SeccionDiccionario("Causas","Los dolores de cabeza pueden tener causas que no se deben a una enfermedad subyacente. Por ejemplo, falta de sueño, aumento incorrecto de los anteojos recetados, exposición a ruidos fuertes o uso de gorros o sombreros ajustados."))
 
         var seccionesOtraEnfermedad=ArrayList<SeccionDiccionario>()
         seccionesOtraEnfermedad.add(SeccionDiccionario("Definición","Esta es otra enfermedad."))
         seccionesOtraEnfermedad.add(SeccionDiccionario("Síntomas", "Estos son los síntomas."))
 
         lstDiccionarios.add(Diccionario("Dolor de cabeza",seccionesDolorCabeza, enfermedad))
-        lstDiccionarios.add(Diccionario("Otra enfermedad",seccionesOtraEnfermedad, enfermedad))
+        lstDiccionarios.add(Diccionario("Gripe",seccionesOtraEnfermedad, enfermedad))
         lstDiccionarios.add(Diccionario("Paracetamol", seccionesParacetamol, medicina))
         lstDiccionarios.add(Diccionario("Dramamine", seccionesDramamine, medicina))
 

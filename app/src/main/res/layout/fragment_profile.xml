@@ -24,7 +24,7 @@
         android:layout_width="150dp"
         android:layout_height="150dp"
         android:layout_gravity="center"
-        android:background="@mipmap/perfil_48x48_mdpi" />
+        android:background="@mipmap/perfil_144x144_xxhdpi" />
 
     <LinearLayout
         android:layout_width="match_parent"

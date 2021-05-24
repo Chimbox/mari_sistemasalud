@@ -127,7 +127,7 @@
                         android:background="@mipmap/activo_36x36_ldpi" />
 
                     <TextView
-                        android:layout_width="wrap_content"
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="@string/activo"
                         android:textAlignment="center"
@@ -241,6 +241,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:lines="3"
+                        android:textAlignment="center"
                         android:text="@string/dolor_cabeza"
                         android:textColor="@color/light_foreground" />
 

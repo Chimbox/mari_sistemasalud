@@ -43,23 +43,62 @@ class MeSientoActivity : AppCompatActivity() {
             .document(MenuActivity.idDocumentoPerfil)
             .get()
             .addOnSuccessListener {
-                lstEstadosAnimo=it.get("estados_animo") as ArrayList<EstadoAnimo>
-                lstSintomas=it.get("sintomas") as ArrayList<Sintoma>
-                lstEstadosPersonalizado=it.get("estados_personalizado") as ArrayList<Estado>
+                var lstStringEstadosAnimo=it.get("estados_animo") as ArrayList<String>
+                var lstStringSintomas=it.get("sintomas") as ArrayList<String>
+                var lstStringEstadosPersonalizado=it.get("estados_personalizado") as ArrayList<String>
 
-                lstEstadosAnimo.forEach {
+                lstStringEstadosAnimo.forEach {
                     when(it){
-                        EstadoAnimo.FELIZ->
-                            btn_feliz_hoyMeSiento.setImageResource(R.mipmap.feliz_activo_48x48_mdpi)
+                        EstadoAnimo.FELIZ.toString() -> {
+                            lstEstadosAnimo.add(EstadoAnimo.FELIZ)
+                            btn_feliz_hoyMeSiento.setImageResource(R.mipmap.feliz_acitvo_72x72_mdpi)
+                        }
+
+                        EstadoAnimo.CALMADO.toString() -> {
+                            lstEstadosAnimo.add(EstadoAnimo.CALMADO)
+                            btn_calmado_hoyMeSiento.setImageResource(R.mipmap.calmado_acitvo_72x72_mdpi)
+                        }
+
+                        EstadoAnimo.ACTIVO.toString() -> {
+                            lstEstadosAnimo.add(EstadoAnimo.ACTIVO)
+                            btn_activo_hoyMeSiento.setImageResource(R.mipmap.activo_acitvo_72x72_mdpi)
+                        }
+
+                        EstadoAnimo.TRISTE.toString() -> {
+                            lstEstadosAnimo.add(EstadoAnimo.TRISTE)
+                            btn_triste_hoyMeSiento.setImageResource(R.mipmap.triste_acitvo_72x72_mdpi)
+                        }
+                        EstadoAnimo.IRRITADO.toString() -> {
+                            lstEstadosAnimo.add(EstadoAnimo.IRRITADO)
+                            btn_irritado_hoyMeSiento.setImageResource(R.mipmap.irritado_acitvo_72x72_mdpi)
+                        }
+                        EstadoAnimo.ANSIAS.toString() -> {
+                            lstEstadosAnimo.add(EstadoAnimo.ANSIAS)
+                            btn_ansioso_hoyMeSiento.setImageResource(R.mipmap.ansioso_acitvo_72x72_mdpi)
+                        }
                     }
                 }
+
+                lstStringSintomas.forEach {
+                    when(it){
+
+                    }
+                }
+
+               /* lstEstadosAnimo.forEach {
+                    when(it.toString()){
+                        EstadoAnimo.FELIZ.toString()->
+                            btn_feliz_hoyMeSiento.setImageResource(R.mipmap.feliz_activo_48x48_mdpi)
+                    }
+                }*/
+
             }
 
         tv_fecha_hoySiento.text = current.dayOfMonth.toString() + " de " + current.month.toString()
 
-        lstEstados.add(Estado("EstadoAnimo 1", false))
-        lstEstados.add(Estado("EstadoAnimo 2", false))
-        lstEstados.add(Estado("EstadoAnimo 3", false))
+        lstEstados.add(Estado("Achicopalado", false))
+        lstEstados.add(Estado("A gusto", false))
+        lstEstados.add(Estado("Al cien", false))
         var adapter = EditorEstadoLVAdapter(lstEstados, this)
         lv_estados.adapter = adapter
 

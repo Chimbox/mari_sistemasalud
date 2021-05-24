@@ -25,11 +25,9 @@ class MetasFragment : Fragment() {
             ViewModelProvider(this).get(MetasViewModel::class.java)
         val root = inflater.inflate(R.layout.fragment_metas, container, false)
 
-        lstMetas.add(Meta("Meta 1", false))
-        lstMetas.add(Meta("Meta 2", true))
-        lstMetas.add(Meta("Meta 3", false))
-        lstMetas.add(Meta("Meta 4", false))
-        lstMetas.add(Meta("Meta 5", false))
+        lstMetas.add(Meta("Bajar 3kg", false))
+        lstMetas.add(Meta("Mantener la dieta 1 semana", true))
+        lstMetas.add(Meta("Trotar 2500m sin parar", false))
 
         var adapter=MetaListViewAdapter(lstMetas, context)
         root.lvMetas.adapter=adapter

@@ -16,11 +16,6 @@ class ActivityEditorMetas : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_editor_metas)
 
-        lstMetas.add(Meta("Primera meta", false))
-        lstMetas.add(Meta("Segunda meta", false))
-        lstMetas.add(Meta("Tercera meta", false))
-        lstMetas.add(Meta("Cuarta meta", false))
-
         var adapter = EditorMetaListViewAdapter(lstMetas, this)
         lvMetas.adapter = adapter
         btnRegresar.setOnClickListener {
