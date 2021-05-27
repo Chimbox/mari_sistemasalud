@@ -46,7 +46,7 @@ class MeSientoActivity : AppCompatActivity() {
                 var lstStringEstadosAnimo = it.get("estados_animo") as ArrayList<String>
                 var lstStringSintomas = it.get("sintomas") as ArrayList<String>
                 var lstStringEstadosPersonalizado =
-                    it.get("estados_personalizado") as ArrayList<String>
+                    it.get("estados_personalizado") as ArrayList<Map<Object, Object>>
 
                 lstStringEstadosAnimo.forEach {
                     when (it) {
@@ -109,15 +109,16 @@ class MeSientoActivity : AppCompatActivity() {
                     }
                 }
 
+                lstStringEstadosPersonalizado.forEach {
+                    var estado = Estado(it.get("titulo") as String, it.get("estado") as Boolean)
+                    lstEstadosPersonalizado.add(estado)
+                }
+                var adapter = EstadoPersonalizdoListViewAdapter(lstEstadosPersonalizado, this, db)
+                lv_estados.adapter = adapter
             }
 
         tv_fecha_hoySiento.text = current.dayOfMonth.toString() + " de " + current.month.toString()
 
-        lstEstados.add(Estado("Achicopalado", false))
-        lstEstados.add(Estado("A gusto", false))
-        lstEstados.add(Estado("Al cien", false))
-        var adapter = EditorEstadoLVAdapter(lstEstados, this)
-        lv_estados.adapter = adapter
 
         btn_feliz_hoyMeSiento.setOnClickListener {
             if (!lstEstadosAnimo.contains(EstadoAnimo.FELIZ)) {

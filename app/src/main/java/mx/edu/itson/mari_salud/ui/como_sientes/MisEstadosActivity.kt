@@ -31,8 +31,13 @@ class MisEstadosActivity : AppCompatActivity() {
             .get()
             .addOnSuccessListener { it ->
                 var lstStringEstadosPersonalizado =
-                    it.get("estados_personalizado") as ArrayList<Estado>
-                lstEstados = lstStringEstadosPersonalizado
+                    it.get("estados_personalizado") as ArrayList<Map<Object, Object>>
+
+                lstStringEstadosPersonalizado.forEach {
+                    var estado = Estado(it.get("titulo") as String, it.get("estado") as Boolean)
+                    lstEstados.add(estado)
+                }
+
                 Toast.makeText(this, lstEstados.toString(), Toast.LENGTH_LONG).show()
                 adapter = EditorEstadoLVAdapter(lstEstados, this)
                 lvEstados.adapter = adapter
