@@ -7,6 +7,9 @@ import android.view.View.*
 import android.view.ViewGroup
 import android.widget.BaseAdapter
 import android.widget.Toast
+import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.firestore.DocumentReference
+import com.google.firebase.firestore.FirebaseFirestore
 import kotlinx.android.synthetic.main.editor_metas_item.view.*
 import mx.edu.itson.mari_salud.R
 import mx.edu.itson.mari_salud.ui.dominio.Meta
@@ -15,10 +18,14 @@ class EditorMetaListViewAdapter : BaseAdapter {
 
     var lstMetas=ArrayList<Meta>()
     var context: Context? = null
+    val db:FirebaseFirestore
+    val auth:FirebaseAuth
 
-    constructor(lstMetas: ArrayList<Meta>, context: Context?) : super() {
+    constructor(lstMetas: ArrayList<Meta>, context: Context?, db:FirebaseFirestore, auth:FirebaseAuth) : super() {
         this.lstMetas = lstMetas
         this.context = context
+        this.db=db
+        this.auth=auth
     }
 
     override fun getCount(): Int {
@@ -49,13 +56,52 @@ class EditorMetaListViewAdapter : BaseAdapter {
         }
         vista.btnDuplicar.setOnClickListener {
             Toast.makeText(context, "Duplicando meta...", Toast.LENGTH_SHORT).show()
-            lstMetas.add(meta.copy())
-            notifyDataSetChanged()
+
+            var metaCopia=meta.copy()
+
+            db.collection("meta")
+                .add(hashMapOf(
+                    "estado" to false,
+                    "titulo" to metaCopia.titulo
+                )).addOnCompleteListener {
+                    metaCopia.idDocumento=it.result!!.id
+                    var reference=it.result
+                    lstMetas.add(metaCopia)
+                    notifyDataSetChanged()
+
+                    db.collection("metas")
+                        .whereEqualTo("email",auth.currentUser.email)
+                        .get()
+                        .addOnSuccessListener {
+                            it.forEach { docMetas->
+                                db.collection("metas")
+                                    .document(docMetas.id)
+                                    .get()
+                                    .addOnSuccessListener {
+                                        var lstReferencias=it.get("metas") as ArrayList<DocumentReference>
+                                        lstReferencias.add(reference!!)
+
+                                        db.collection("metas")
+                                            .document(docMetas.id)
+                                            .update("metas", lstReferencias)
+                                    }
+                            }
+                        }
+                }
+
+
+
+
+
         }
         vista.btnBorrar.setOnClickListener {
             Toast.makeText(context, "Borrando meta...", Toast.LENGTH_SHORT).show()
             lstMetas.removeAt(p0)
             notifyDataSetChanged()
+
+            db.collection("meta")
+                .document(meta.idDocumento)
+                .delete()
         }
 
         vista.btnGuardar.setOnClickListener {
@@ -67,6 +113,10 @@ class EditorMetaListViewAdapter : BaseAdapter {
 
             lstMetas[p0]=meta
             notifyDataSetChanged()
+
+            db.collection("meta")
+                .document(meta.idDocumento)
+                .update("titulo", meta.titulo)
         }
 
         vista.tvMeta.setOnClickListener {

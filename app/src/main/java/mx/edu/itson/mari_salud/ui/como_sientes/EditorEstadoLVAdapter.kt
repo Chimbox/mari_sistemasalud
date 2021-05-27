@@ -6,7 +6,10 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.BaseAdapter
 import android.widget.Toast
+import com.google.firebase.firestore.FirebaseFirestore
 import kotlinx.android.synthetic.main.editor_metas_item.view.*
+import mx.edu.itson.mari_salud.MainActivity
+import mx.edu.itson.mari_salud.MenuActivity
 import mx.edu.itson.mari_salud.R
 import mx.edu.itson.mari_salud.ui.dominio.Estado
 
@@ -14,10 +17,12 @@ class EditorEstadoLVAdapter : BaseAdapter {
 
     var lstEstados = ArrayList<Estado>()
     var context: Context? = null
+    val db:FirebaseFirestore
 
-    constructor(lstEstados: ArrayList<Estado>, context: Context?) : super() {
+    constructor(lstEstados: ArrayList<Estado>, context: Context?, db:FirebaseFirestore) : super() {
         this.lstEstados = lstEstados
         this.context = context
+        this.db=db
     }
 
     override fun getCount(): Int {
@@ -50,11 +55,17 @@ class EditorEstadoLVAdapter : BaseAdapter {
             Toast.makeText(context, "Duplicando estado...", Toast.LENGTH_SHORT).show()
             lstEstados.add(estado.copy())
             notifyDataSetChanged()
+            db.collection("perfil")
+                .document(MenuActivity.idDocumentoPerfil)
+                .update("estados_personalizado",lstEstados)
         }
         vista.btnBorrar.setOnClickListener {
             Toast.makeText(context, "Borrando estado...", Toast.LENGTH_SHORT).show()
             lstEstados.removeAt(position)
             notifyDataSetChanged()
+            db.collection("perfil")
+                .document(MenuActivity.idDocumentoPerfil)
+                .update("estados_personalizado",lstEstados)
         }
 
         vista.btnGuardar.setOnClickListener {
@@ -64,6 +75,9 @@ class EditorEstadoLVAdapter : BaseAdapter {
             vista.lytGuardar.visibility = View.GONE
             lstEstados[position] = estado
             notifyDataSetChanged()
+            db.collection("perfil")
+                .document(MenuActivity.idDocumentoPerfil)
+                .update("estados_personalizado",lstEstados)
         }
 
         vista.tvMeta.setOnClickListener {

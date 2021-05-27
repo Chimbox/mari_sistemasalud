@@ -5,6 +5,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.BaseAdapter
+import com.google.firebase.firestore.FirebaseFirestore
 import kotlinx.android.synthetic.main.metas_item.view.*
 import mx.edu.itson.mari_salud.R
 import mx.edu.itson.mari_salud.ui.dominio.Meta
@@ -13,10 +14,12 @@ class MetaListViewAdapter : BaseAdapter {
 
     var lstMetas=ArrayList<Meta>()
     var context: Context? = null
+    val db:FirebaseFirestore
 
-    constructor(lstMetas: ArrayList<Meta>, context: Context?) : super() {
+    constructor(lstMetas: ArrayList<Meta>, context: Context?, db:FirebaseFirestore) : super() {
         this.lstMetas = lstMetas
         this.context = context
+        this.db=db
     }
 
 
@@ -39,6 +42,15 @@ class MetaListViewAdapter : BaseAdapter {
 
         vista.btnMeta.setText(meta.titulo)
         vista.cbxEstado.isChecked=meta.estado
+
+        vista.cbxEstado.setOnCheckedChangeListener { compoundButton, b ->
+            meta.estado=b
+            lstMetas[p0]=meta
+
+            db.collection("meta")
+                .document(meta.idDocumento)
+                .update("estado",b)
+        }
 
         return vista
     }

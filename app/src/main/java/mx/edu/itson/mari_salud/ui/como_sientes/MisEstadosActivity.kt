@@ -39,7 +39,7 @@ class MisEstadosActivity : AppCompatActivity() {
                 }
 
                 Toast.makeText(this, lstEstados.toString(), Toast.LENGTH_LONG).show()
-                adapter = EditorEstadoLVAdapter(lstEstados, this)
+                adapter = EditorEstadoLVAdapter(lstEstados, this, db)
                 lvEstados.adapter = adapter
             }
 
