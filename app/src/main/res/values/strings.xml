@@ -31,6 +31,8 @@
     <string name="como_te_sientes_hoy">¿Cómo te sientes hoy?</string>
     <string name="fecha_jueves_25">Jueves 25 de marzo</string>
     <string name="calendario">Calendario</string>
+    <string name="estatura_estiloVida">Estatura</string>
+    <string name="peso_estiloVida">Peso</string>
     <string name="consejo_diario">Consejo diario</string>
     <string name="mi_perfil">Mi perfil</string>
     <string name="ajustes_estilo_vida">Ajustes de estilo de vida</string>
