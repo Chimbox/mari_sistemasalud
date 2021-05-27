@@ -86,6 +86,7 @@
         </Button>
 
         <Button
+            android:id="@+id/btn_necesitoAtencion_NecesitoAyuda"
             android:layout_width="match_parent"
             android:layout_height="100dp"
             android:background="@drawable/little_card_view_background"
